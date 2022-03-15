@@ -5,9 +5,9 @@ git commit -m "komentar" <br>
 git push -u origin main <br>
 #Tutorial update project lokal<br>
 git pull origin main <br>
-#Tutorial jika error di gitbash
-hapus file dengan nama postmind
-masuk ke dalam folder htdocs
-klik kanan dan pilih git bash here
-git clone https://github.com/EGraci/postmind.git
+#Tutorial jika error di gitbash <br>
+hapus file dengan nama postmind <br>
+masuk ke dalam folder htdocs <br>
+klik kanan dan pilih git bash here <br>
+git clone https://github.com/EGraci/postmind.git <br>
 
