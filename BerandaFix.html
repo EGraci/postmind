@@ -1,0 +1,327 @@
+	<head>
+	<title>Beranda PostMind</title>
+	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	
+  <link href="../CSS/style.css" rel="stylesheet" type="text/css"/>
+  <script src="https://kit.fontawesome.com/f9f60adc82.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../ALVIN/navfoot-style.css">
+	</head>
+	<style>
+	
+		@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+		.box {
+			width:50%;
+			height:400px;
+			background-color: #ffff;
+			text-align:center;
+			margin-top:-450px;
+			margin-left:auto;
+      margin-right:auto;
+		}
+		
+		.wrapper-text{
+			text-align:center;
+			opacity:0;
+			animation:ani2 0.5s ease-out forwards;	
+		}
+		
+		.wrapper-text h2{
+			opacity:0;
+			margin:0px;
+      font-size:20px; 
+      font-family:Oswald;
+
+		}
+		
+		.wrapper-text h2{
+			animation: ani2 0.75s ease-out 1.5s forwards;
+		}
+		
+		@keyframes ani2{
+			100%{
+				opacity:1;
+			}
+		}
+		
+		.cover {
+			width: 100%;
+			height: 500px;
+			background-color: #ffff;
+			margin: auto;
+			margin-top : 100px;
+      position:relative;
+		}
+
+		.cover3 {
+		width:60%;
+		height:150px;
+		background-color: #ffff;
+		margin:auto;
+		top:100px;
+		font-size:28px;
+		margin:10px auto;
+    font-family:Oswald; 
+    font-style:normal; 
+		}
+		
+		.bingkai{
+      width:50px;
+      height:500px;
+      background-color:#ffff;
+      margin:auto;
+      margin-left:50px;
+      top:0;
+      position:absolute;
+		}
+		.parent-bingkai{
+      position:absolute;
+      width:100%;
+    }
+		.slider {
+			/* position:absolute; */
+      margin-top:20px;
+			margin:10px auto;
+			/* transform: translate(-50%, -50%) */
+		}
+
+		.slides{
+					display:flex;
+					width: 10rem;
+					overflow: hidden;
+
+		}
+
+		.slide{
+					width:10rem;
+					transition: .5s;
+
+		}
+		
+		slidetext {
+			display:flex;
+			width:30rem;
+			overflow:hidden;
+		
+		}
+	
+
+		.choose_1:checked ~ .slides > .s1{
+					margin-left:-0rem;
+		}
+
+		.choose_2:checked ~ .slides > .s1{
+					margin-left:-10rem;
+		}
+
+		.choose_3:checked ~ .slides > .s1{
+					margin-left:-20rem;
+		}
+		
+		
+		
+		.choose_1:checked ~ .slidetext > .s1{
+					margin-left:-0rem;
+		}
+
+		.choose_2:checked ~ .slidetext > .s1{
+					margin-left:-10rem;
+		}
+
+		.choose_3:checked ~ .slidetext > .s1{
+					margin-left:-20rem;
+		}
+		
+		.container {
+			width: 100%;
+			min-height: 200px;
+		}
+
+    @media only screen and (max-width:600px){
+      #post-desc{
+        font-size:18px;
+      }
+
+      .btn1{
+        margin-top:200px;
+
+      }
+
+      .cover3{
+        width:40%;
+        font-size:16px;
+        margin-top:30px;
+
+      }
+
+    }
+    
+    
+    </style>
+
+	<body>
+    <header class="header">
+			<nav class="navbar">
+				<a href="#" class="navm-logo" ><img class="nav-logo" src="../gambar/logo2.png"></a>
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a href="../Pages Siswa/Layanan.html" class="nav-link">Layanan</a>
+					</li>
+					<li class="nav-item">
+						<a href="../Pages Siswa/Beranda.html" class="nav-link">Tentang Postmind</a>
+					</li>
+					<li class="nav-item">
+						<a href="../Pages Siswa/HalamanKerjasama.html" class="nav-link">Kerjasama</a>
+					</li>
+					<li class="nav-masuk">
+						<a href="../Pages Siswa/login.html" class="navl-masuk">Masuk</a>
+					</li>
+					 <li class="nav-item">
+						<a href="../Pages Siswa/pendaftaran.html" class="nav-link">Daftar</a>
+					</li>
+				</ul>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</nav>
+		</header>
+
+	<div class="image-sikawinten">
+    <img src="../gambar/embun sikawinten.png" width="700" height="500" style="margin-left:-260px; margin-top:50px">
+	  <img src="../gambar/sikawinten kanan.png" width="700" height="500" style="margin-left:70%; margin-top:-517px">
+  </div>
+	<div class="box">
+	<div class="wrapper-text">
+	<div class="wrapper-text h2">
+	<img src="../gambar/logo.png" width="200" height="200" style="margin-left:540; margin-top:-450px; margin:auto;">
+	<h2><center id="post-desc">Merupakan platform kesehatan mental yang didirikan oleh mahasiswa/i Ilmu Informatika
+				Universitas Katolik Darma Cendika. Platform ini didirikan dengan tujuan untuk membantu
+				pelajar-pelajar di Indonesia dalam mengenali tipe kepribadian serta gaya belajar yang kelak menjadi acuan untuk menunjang prestasi serta pengembangan diri</center></h2>
+	</div>
+  </div>
+  </div>
+
+  
+	<center>
+    <div class="btn1">
+    <table style="margin-left:-15px; margin-top:0px; ">
+			<tr>
+				<td width="200" height="10" align="center" style="background-color:#FFE162; border-radius:35px; border-style:none; margin-left:500px; margin-top:50px;" > 
+				<a href="login.html" style="text-decoration:none"><h3 style="margin-top:20px; color:black;">Masuk</h3></a></td>
+			</tr>
+	  </table>
+    </div>
+  
+    
+    <table border="1px" style="margin-top:50px; margin-right:10px; border-style:none; border-spacing:50px; font-family:Oswald, sans-serif;font-style: normal; font-size:20px" >
+			<tr>
+			
+				<td width="300" height="200" align="center" style="border-style:none">
+					<img src="../gambar/woman 3.png" width="200px" height="200px">
+				</td>
+				<td width="300" height="200" align="center" style="border-style:none" >
+					<img src="../gambar/man.png" width="200px" height="200px">
+				</td>
+				<td width="300" height="200" align="center" style="border-style:none">
+					<img src="../gambar/woman 2.png" width="200px" height="200px">
+				</td>
+			</tr>
+			<tr>
+
+				
+					
+				<td width="300" height="300" align="center" style="border-style:none">
+				<div class="wrapper-text">
+					<h2 style="margin-top:-7px">SISWA<hr></h2>
+						<p>PostMind Siswa merupakan platform kesehatan mental yang didedikasikan kepada para pelajar di seluruh Indonesia
+						untuk mengatasi permasalahan pribadi maupun pendidikan. Dalam platform ini para siswa dapat melakukan test untuk mengenali
+						tipe kepribadian serta gaya belajar yang kelak menjadi acuan untuk menunjang prestasi serta pengembangan diri.</p>
+				</div>
+				</td>
+				
+				<td width="300" height="300" align="center" style="border-style:none; ">
+				<div class="wrapper-text">
+					<h2 class="text1" style="margin-top:-30px">SEKOLAH <hr></h2>
+						<p>PostMind Sekolah merupakan platform kesehatan mental yang dibangun untuk SMP/SMA/SMK di seluruh Indonesia. 
+							PostMind Sekolah membantu guru BK untuk mengamati kebutuhan perkembangan diri setiap siswa.
+							Selain itu, PostMind Sekolah juga berfungsi sebagai media promosi instansi yang efektif dan efisien. </p>
+				</div>
+				</td>
+				
+				<td width="300" height="300" align="center" style="border-style:none; padding-top:22px;">
+				<div class="wrapper-text">
+					<h2 style="margin-top:-30px">KONSELOR<hr></h2>
+						<p>PostMind Konselor merupakan platform kesehatan mental yang didedikasikan kepada para konselor untuk berkarya,
+						   membantu memecahkan permasalahan para siswa. Selain itu, PostMind Konselor juga berfungsi sebagai
+						   media penghubung konselor dengan guru BK pada sekolah terkait untuk mengkomunikasikan perkembangan para siswa lebih lanjut. </p>
+				</div>
+				</td>
+			</tr>
+			
+	</center></table>
+	<table style="margin-left:-15px; margin-top:0px; font-family:arial narrow">
+			<tr>
+				<td width="200" height="10" align="center" style="background-color:#FFE162; border-radius:35px; border-style:none; margin-left:500px; margin-top:50px; font-family:arial narrow;" > 
+				<a href="#" style="text-decoration:none"><h3 style="margin-top:20px; color:black; ">Daftar Sekolah</h3></a></td>
+			</tr>
+	</table>
+	
+	<div class="cover">
+	<div class="bingkai">
+  </div>
+  <div class="parent-bingkai">
+    <div class="slider">
+		<input type="radio" name="choose" class="choose_1" checked>
+		<input type="radio" name="choose" class="choose_2">
+		<input type="radio" name="choose" class="choose_3">
+      <div class="slides">
+        <img src= "../gambar/3.jpeg" alt="" class="slide s1" style="border-radius:100%">
+        <img src= "../gambar/lala.jpeg" alt="" class="slide" style="border-radius:100%">
+        <img src= "../gambar/hendra.jpeg" alt="" class="slide" style="border-radius:100%">
+      </div>
+	  </div>
+    <div class="cover3">
+    <div class="slidetext">
+    <p><center>"PostMind membantu saya untuk dapat mengenali diri lebih baik. Mengenali apa yang saya mau dan apa yang saya butuhkan untuk mempersiapkan masa depan saya."</center></p>
+    <br><p>Yohana Christela - SMK Katolik St.Louis</p>
+    
+    </div>
+	</div>
+  </div>
+	
+	
+	</div><br><br><br>
+
+	<div class="flex-container">
+			<div class="navigasi">
+				<div class="postmind"><img class="postmind" src="../gambar/logo.png"></div>
+				<br><i class="fas fa-map-marker-alt"></i>&nbsp Jl. Dr. Ir. H. Soekarno No. 201<br>
+				<i class="fas fa-envelope"></i>&nbsp info@ukdc.ac.id<br>
+				<i class="fas fa-phone-alt" id="logo"></i>&nbsp 031-5946482<br>
+				<i class="far fa-clock"></i>&nbsp 08.00 - 17.00
+			</div>
+			<div class="navigasi-circle">
+				<center><h2>Social Media</h2></center>
+				<a class="logo"href="https://www.instagram.com/infoukdc/"><i class="fab fa-instagram fa-lg"></i></a>
+				<a class="logo" href="https://www.youtube.com/c/UniversitasKatolikDarmaCendika/featured"><i class="fab fa-youtube fa-lg"></i></a>
+				<a class="logo" href="https://www.facebook.com/universitaskatolik.darmacendika"><i class="fa fa-facebook fa-lg"></i></a>
+				<a class="logo" href="https://twitter.com/ukdcofficial?lang=en"><i class="fa fa-twitter fa-lg"></i></a>
+			</div>
+		</div>
+		<center>
+			<div class="credit">
+				<p class="foot">Copyright &#169 2021 DC Informatics</p>
+			</div>
+		<center>
+		<script src="../ALVIN/navfoot.js"></script>
+
+	</body>
+
+
+
+</html>
