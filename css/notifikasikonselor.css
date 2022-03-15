@@ -1,0 +1,308 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+  font-family: oswald;
+			
+
+}
+
+body{
+	background-color: #F2CA50;
+}
+
+.down1{
+	position:absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background:  #ffe573;
+	width:  55%;
+	height: 8%;
+	padding: 8px 25px;
+	border-radius: 5px;
+
+		}
+		
+		.down1 label{
+			font-size: 22px;
+			font-weight: 200;
+			display: block;
+			cursor: pointer;
+			line-height: 35px;
+      p
+		}
+		
+		.down1 label:hover{
+			color:brown;
+		}
+		
+		.down2{
+			position:absolute;
+			top: 55%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background:  #ffe573;
+			width:  55%;
+			height: 8%;
+			padding: 8px 25px;
+			border-radius: 5px;			
+		}
+		
+		.down2 label{
+			font-size: 22px;
+			font-weight: 200;
+			display: block;
+			cursor: pointer;
+			line-height: 35px;
+		}
+		.down2 label:hover{
+			color:brown;
+		}
+		
+		.down3{
+			position:absolute;
+			top: 70%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background:  #ffe573;
+			width:  55%;
+			height: 8%;
+			padding: 8px 25px;	
+			border-radius: 5px;
+			
+		}
+		
+.down3 label{
+	font-size: 22px;
+	font-weight: 200;
+	display: block;
+	cursor: pointer;
+	line-height: 35px;
+}
+		
+.down3 label:hover{
+	color:brown;
+}
+
+.button span {
+	float: right;
+	line-height: 35px;
+}
+		
+.down_test1 {
+	position:absolute;
+	top: 150%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background:  #FFFB9E;
+	width:  600px;
+	height: 40px;
+	padding: 8px 25px;
+	border-radius: 5px;
+}
+.down_test1 label{
+	font-size: 16px;
+	font-weight: 200;
+	display: block;
+	cursor: pointer;
+	line-height: 25px;
+}
+	
+.down-test1 label:hover{
+	color:brown;
+}
+		
+.button_test1 span {
+	float: right;
+	line-height: 20px;
+}
+		
+		
+.down_test2 {
+	position:absolute;
+	top: 350%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background:  #FFFB9E;
+	width:  600px;
+	height: 40px;
+	padding: 8px 25px;	
+	border-radius: 5px;
+			
+}
+.down_test2 label{
+	font-size: 16px;
+	font-weight: 200;
+	display: block;
+	cursor: pointer;
+	line-height: 25px;
+}
+		
+.down-test2 label:hover{
+	color:brown;
+}
+.button_test2 span {
+	float: right;
+	line-height: 20px;
+}
+		
+div ul {
+	position: absolute;
+	background: #FFFB9E;
+	list-style: none;
+	top: 75px;
+	width: 100%;
+	border-radius: 5px;
+	display:none;
+}
+		
+[id^=btn-1]:checked + ul{
+	display:block;
+}
+	[id^=btn-2]:checked + ul{
+	display:block;
+}
+	[id^=btn-3]:checked + ul{
+	display:block;
+}
+		
+div ul li {
+	line-height:40px;
+	padding: 8px 20 px;
+	cursor: pointer;
+	border-buttom: 1px solid rgba(0,0,0,0.2);
+}
+		
+div ul li label{
+	font-size: 18px;
+	display: block;
+}
+	
+div ul li a{
+	color: black;	
+	text-decoration: none;
+	margin-left: 30px;
+}
+		
+div ul ul{
+	position: static;			
+}
+		
+	div ul ul li {
+	line-height: 20px;
+	padding-left: 30px;
+	border-bottom: none;
+}
+		
+div ul li span{
+	font-size: 20px;
+	float: right;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+		
+div .history:before{
+	position: absolute;
+	content:'';
+	height: 20px;
+	width: 20px;
+	background: #FFFB9E;
+	right: 45px;
+	top: -10px;
+	transform: rotate(45deg);
+	z-index: -1;
+			
+}
+		
+		
+input{
+	display: none;
+}
+		
+.ikonbetawicowok{
+	margin-left:1%; 
+	margin-top:10%;
+
+}
+
+.ikonbetawicewek{
+	margin-left:75%;
+	margin-top:-32%;
+}
+
+.tbllihathasil{
+  position:absolute;
+	top: 55%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	background:  #ffe573;
+	width:  20%;
+	height: 15%;
+	padding: 8px 25px;
+	border-radius: 20px;
+}
+
+.tbllihathasil label{
+  font-size: 16px;
+	font-weight: 200;
+	display: block;
+	cursor: pointer;
+	line-height: 25px;
+}
+
+.tbllihathasil h1 a{
+  font-size:50%;
+  font-weight: 50%;
+  text-decoration: none;
+  margin-left: 12%;
+  color:brown;
+  line-height: 25px;
+}
+
+.tblterima{
+  position:absolute;
+	top: 55%;
+	left: 85%;
+	transform: translate(-50%, -50%);
+	background:  #ffe573;
+	width:  20%;
+	height: 15%;
+	padding: 8px 25px;
+	border-radius: 20px;
+}
+
+.tblterima label{
+  font-size: 16px;
+	font-weight: 200;
+	display: block;
+	cursor: pointer;
+	line-height: 25px;
+}
+
+.tblterima a{
+  font-size:50%;
+  font-weight: 50%;
+  text-decoration: none;
+  margin-left: 28%;
+  color:brown;
+  line-height: 25px;
+}
+
+  .kembali{
+      width: 40px;
+      height:40px;
+      background-color: #BF7E04;
+      border-radius:100%;
+      margin-left: 50px;
+      margin-top:50px;
+   
+  }
+
+
+.judul{
+      width: 300px;
+      height:60px;
+      background-color: #BF7E04;
+      border-radius:40px;
+}

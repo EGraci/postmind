@@ -9,7 +9,7 @@ body {
 
 form {
 	border-radius: 15px;
-	background-color: #BCDFF9;
+	background-color: #F5E9C4;
 	border: 5px solid white;
 	margin-top: 5%;
   margin-bottom:5%;
@@ -29,7 +29,7 @@ form input {
 }
 
 form button {
-	background: #FFE162;
+	background: #EED980;
 	padding: 0.7em;
 	border: 0;
 }

@@ -72,11 +72,11 @@ body {
     margin: 0;
     padding: 0;
 	font-style: normal;
-	background-color: white;
+	background-color: #DEB530;
    }
 
 .inform{
-	background-color: #BCDFF9;
+	background-color: #FFFB9E;
 }
 
 .copyright{
@@ -88,7 +88,7 @@ body {
 
 form {
 	border-radius: 15px;
-	background-color: #BCDFF9;
+	background-color: #F5E9C4;
 	border: 5px solid white;
 	margin-top: 100px;
   margin-bottom:50px;
@@ -105,7 +105,7 @@ form input {
 }
 
 form button {
-	background: #FFE162;
+	background: #EED980;
 	padding: 0.7em;
 	border: 0;
 	margin-top:10px;
