@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Oswald;
+  overflow-x: hidden;
+}
+
+.toggle {
+  background: #bf7e04;
+  width: 5.2em;
+  height: 5.2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.toggle:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.toggle i {
+  font-size: 4em;
+  color: white;
+  display: block;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.menu {
+  background: #fffb9e;
+  height: 6.2em;
+  width: 6.2em;
+  border-radius: 50%;
+  transform: scale(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+  transition: 0.7s;
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+    3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu a {
+  display: flex;
+  position: absolute;
+  font-size: 0.8em;
+  color: #bf7e04;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.menu i {
+  font-size: 0.7em;
+}
+
+/* Tes Kepribadian */
+.menu a:nth-child(2) {
+  top: 28px;
+  left: 62px;
+  list-style: none;
+  font-size: 7%;
+}
+
+/* Tes gaya belajar */
+.menu a:nth-child(3) {
+  top: 56px;
+  left: 66px;
+  list-style: none;
+  font-size: 7%;
+}
+/* Riwayat*/
+.menu a:nth-child(4) {
+  top: 76px;
+  left: 40px;
+  list-style: none;
+  font-size: 7%;
+}
+/*Konselor*/
+.menu a:nth-child(5) {
+  top: 57px;
+  left: 10px;
+  list-style: none;
+  font-size: 7%;
+}
+/*Teduh*/
+.menu a:nth-child(6) {
+  top: 29px;
+  left: 10px;
+  list-style: none;
+  font-size: 7%;
+}
+/* Artikel*/
+.menu a:nth-child(7) {
+  top: 10px;
+  left: 35px;
+  list-style: none;
+  font-size: 7%;
+}
+
+.logo {
+  margin-top: 33%;
+  padding-left: 5%;
+}
+
+.menu a:hover {
+  color: black;
+  transition: 0.2s;
+  transform: scale(0.98);
+}
