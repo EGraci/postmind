@@ -1,4 +1,4 @@
-#gunakan git-bash untuk jalankan command berikut ini...
+#gunakan git-bash untuk jalankan command berikut ini...<br>
 #Tutorial uploded project <br>
 git add . <br>
 git commit -m "komentar" <br>
