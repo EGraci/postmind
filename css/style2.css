@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+body {
+	background-color: #E1B835;
+    font-family: Oswald, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+	border-radius: 15px;
+	background-color: #BCDFF9;
+	border: 5px solid white;
+	margin-top: 5%;
+  margin-bottom:5%;
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 4em 1em 1em 1em;
+
+}
+
+form input {
+	margin-bottom: 1%;
+	background: #fff;
+	border: 1px solid #9c9c9c;
+	height: 25px;
+	width: 150px;
+}
+
+form button {
+	background: #FFE162;
+	padding: 0.7em;
+	border: 0;
+}
+
+form button:hover {
+	background: #DEB530;
+	color: black;
+}
+
+form img{
+	width:100px;
+	height:100px;
+	line-height: 150px;
+	position: absolute;
+	left: 50%;
+	top: 170px;
+	transform: translate(-50%, 40%);
+	text-align:center;
+}
+
+.login {
+	text-align: left;
+	display: block;
+	padding: 5px;
+	float: left;
+    width: 200px;
+}
+
+.search input[type=text] {
+	float: right;
+	border: 1px solid #34495e;
+	border-radius: 20px;
+	font-size: 13px;
+	background-image: url(images/search.png);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	padding: 10px 10px 10px 35px;
+	margin-top: -50px;
+	margin-right: 280px;
+}
+
+input {
+	padding: 2%;
+	float: left;
+}
+
+button {
+	font-family: "Oswald", sans-serif;
+	font-size: 18px;
+    float: center;
+    width: 150px;
+	border-radius: 25px;
+  }
+
+ h5 {
+			font-size: 15px;
+			background-color: #FFFB9E;
+		}
+
+		.container {
+			font-size: 23px;
+			background-repeat: no-repeat;
+			background-color: #f7f5b9;
+			border-radius: 25px;
+			
+		}
+		.container:hover {
+			background-color: #FFFB9E;
+		}
+		
+		.wrapper-text{
+			text-align:center;
+			opacity:0;
+			animation:ani2 0.5s ease-out forwards;	
+		}
+		
+		.wrapper-text h2{
+			opacity:0;
+			margin:0;
+		}
+		
+		.wrapper-text h2{
+			animation: ani2 0.75s ease-out 1.5s forwards;
+		}
+		
+		@keyframes ani2{
+			100%{
+				opacity:1;
+			}
+		}
+		
+		.cover {
+			width: 100%;
+			height: 500px;
+			background-color: #BF7E04;
+			margin: auto;
+			margin-top : 50px;
+		}
+	
+		.cover2 {
+		width:150px;
+		height:150px;
+		margin:auto;
+		background-color: #FFFB9E;
+		border-radius:100%;
+		}
+
+table{
+	width: 100%;
+	margin-bottom: 1%;
+}
+
+.pilih input {
+	border: 0;
+	font-family: "Oswald", sans-serif;
+	text-align: left;
+	background: #C79A07;
+	font-size: 16px;
+    width: 100%;
+	border-radius: 25px;
+	padding: 6px 20px;
+	margin: 5px;
+}
+
+.pilih input:hover {
+	background: #DEB530;
+}
+
+.pilih button {
+	font-family: "Oswald", sans-serif;
+	font-size: 18px;
+    float: center;
+    width: 150px;
+	border-radius: 25px;
+	background: #FFFB9E;
+	border: 0;
+	margin-bottom: 5%;
+	padding: 6px 20px;
+  }
+  
+.pilih button:hover {
+	background: #C79A07;
+}  
+
+/* style ini buat halaman  login*/
+.img-form{
+	position: absolute;
+	top: -140px;
+	left:50%;
+  }
+  .image-parent{
+	position:relative;
+	width:100%;
+  }
+  .logo{
+    line-height:0;
+  }
+  .button{
+    text-align:center;
+  }
+  .button button{
+    cursor:pointer;
+  }

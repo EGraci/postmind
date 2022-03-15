@@ -38,7 +38,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
+} 
 input[type=reset] {
   width: 20%;
   color: black;
