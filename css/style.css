@@ -1,0 +1,56 @@
+body {
+  background-color:#ffff;
+  font-family:Oswald, sans-serif;
+  font-style: normal;
+  overflow-x: hidden;
+}
+.border{
+	font-family:Oswald, sans-serif;
+	border: 2px solid black;
+	border-radius: 5px;
+	font-weight: bold;
+	background-color: #FFFB9E;
+}
+fieldset {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+h3 {
+  font-size: 30px;
+  text-align: center;
+}
+.diri{
+	background-color: #FFFB9E;
+	line-height: 30px;
+}
+input[type=submit]:hover {
+  background-color: #FFFB9E;
+}
+input[type=reset]:hover {
+  background-color: #FFFB9E;
+}
+input[type=submit] {
+  width: 20%;
+  color: black;
+  background-color: #EED980;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=reset] {
+  width: 20%;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.title p{
+  margin:20px auto 0px auto;
+}
+
+	@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+		
