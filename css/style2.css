@@ -9,7 +9,7 @@ body {
 
 form {
 	border-radius: 15px;
-	background-color: #F5E9C4;
+	background-color: #BCDFF9;
 	border: 5px solid white;
 	margin-top: 5%;
   margin-bottom:5%;
@@ -29,7 +29,7 @@ form input {
 }
 
 form button {
-	background: #EED980;
+	background: #FFE162;
 	padding: 0.7em;
 	border: 0;
 }
@@ -63,7 +63,7 @@ form img{
 	border: 1px solid #34495e;
 	border-radius: 20px;
 	font-size: 13px;
-	background-image: url(images/search.png);
+	background-image: url(img/search.png);
 	background-repeat: no-repeat;
 	background-position: 10px 10px;
 	padding: 10px 10px 10px 35px;
@@ -92,7 +92,7 @@ button {
 		.container {
 			font-size: 23px;
 			background-repeat: no-repeat;
-			background-color: #f7f5b9;
+			background-color: white;
 			border-radius: 25px;
 			
 		}

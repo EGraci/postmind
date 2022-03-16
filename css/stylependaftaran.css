@@ -58,16 +58,8 @@ input[type=submit] {
   width:100%;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1000px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-  form{
-	  max-width:100%;
-  }
-}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -88,11 +80,11 @@ body {
 
 form {
 	border-radius: 15px;
-	background-color: #F5E9C4;
+	background-color: #BCDFF9;
 	border: 5px solid white;
 	margin-top: 100px;
   margin-bottom:50px;
-	max-width: 47%;
+	width: 47%;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 1em;
@@ -105,7 +97,7 @@ form input {
 }
 
 form button {
-	background: #EED980;
+	background: #FFE162;
 	padding: 0.7em;
 	border: 0;
 	margin-top:10px;
@@ -148,3 +140,21 @@ select {
   .logo{
     line-height:0;
   }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  form{
+	  max-width:100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .col-25, .col-75{float:none;width:100%;}
+
+  form{
+	  width:100%;
+  }
+}
