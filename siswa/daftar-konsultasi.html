@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Daftar Konsultasi</title>
+    <script
+      src="https://kit.fontawesome.com/26a7f3b810.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="../css/stylekonsul.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/navfoot-style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header in every page -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="navm-logo"
+          ><img class="nav-logo" src="../img/postmind.png"
+        /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="Layanan.html" class="nav-link">Layanan</a>
+          </li>
+          <li class="nav-item">
+            <a href="BerandaFix.html" class="nav-link">Tentang Postmind</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Kerjasama</a>
+          </li>
+          <li class="nav-masuk">
+            <a href="login.html" class="navl-masuk">Masuk</a>
+          </li>
+          <li class="nav-item">
+            <a href="pendaftaran.html" class="nav-link">Daftar</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main content -->
+    <div class="main-konselor__body">
+      <div class="main-konselor__child">
+        <button class="arrow-konselor" id="scroll-up">
+          <i class="fa-solid fa-chevron-up fa-2xl"></i>
+        </button>
+        <!-- content konselor (isi nya konselor-konselor) -->
+        <div class="konselor" id="konselor">
+          <div class="konselor-card">
+            <img src="../img/boy 2.png" alt="konselor1" class="img-konselor" />
+            <p>Konselor 1</p>
+          </div>
+          <div class="konselor-card">
+            <img src="../img/boy.png" alt="konselor1" class="img-konselor" />
+            <p>Konselor 2</p>
+          </div>
+          <div class="konselor-card">
+            <img src="../img/boy 2.png" alt="konselor1" class="img-konselor" />
+            <p>Konselor 3</p>
+          </div>
+          <div class="konselor-card">
+            <img src="../img/man.png" alt="konselor1" class="img-konselor" />
+            <p>Konselor 4</p>
+          </div>
+        </div>
+        <button class="arrow-konselor" id="scroll-down">
+          <i class="fa-solid fa-chevron-down fa-2xl"></i>
+        </button>
+      </div>
+      <!-- form registrasi -->
+      <div class="main-konselor__regist">
+        <h1>Konsultasi dengan Psikolog</h1>
+        <form action="" method="post">
+          <div class="konselor-form">
+            <div class="input-form">
+              <div class="label-form">
+                <label for="nama-lengkap">Nama Lengkap</label>
+              </div>
+              <input type="text" name="nama-lengkap" id="nama-lengkap" />
+            </div>
+            <div class="input-form">
+              <div class="label-form">
+                <label for="nama-sekolah">Nama Sekolah</label>
+              </div>
+              <select name="nama-sekolah" id="">
+                <option value="">Pilih Sekolah</option>
+                <option value="smk-1">SMK 1</option>
+                <option value="smk-2">SMK 2</option>
+              </select>
+            </div>
+            <div class="input-form">
+              <div class="label-form">
+                <label for="jenis-kelamin">Jenis Kelamin</label>
+              </div>
+              <div class="jenis-kelamin">
+                <label>
+                  <input
+                    type="radio"
+                    name="jenis-kelamin"
+                    value="laki-laki"
+                    id="laki-laki"
+                  />
+                  <span>Laki-laki</span>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="jenis-kelamin"
+                    value="perempuan"
+                    id="perempuan"
+                  />
+                  <span>Perempuan</span>
+                </label>
+              </div>
+            </div>
+            <div class="input-form">
+              <div class="label-form">
+                <label for="usia">Usia</label>
+              </div>
+              <input type="number" min="12" name="usia" id="usia" />
+            </div>
+            <div class="input-form">
+              <div class="label-form">
+                <label for="email">Email</label>
+              </div>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="input-form">
+              <div class="label-form">
+                <label for="telepon">No. Telepon</label>
+              </div>
+              <input type="text" min="12" name="telepon" id="telepon" />
+            </div>
+            <div class="input-form">
+              <div class="label-form">
+                <label for="layanan-konsul">Jenis Layanan Konsultasi</label>
+              </div>
+              <select name="layanan-konsul" id="">
+                <option value="">Pilih Layanan</option>
+                <option value="layanan1">layanan1</option>
+                <option value="layanan2">layanan2</option>
+              </select>
+            </div>
+            <div class="input-form">
+              <div class="label-form">
+                <label for="jam-konsul">Jam Konsultasi</label>
+              </div>
+              <select name="jam-konsul" id="">
+                <option value="">Pilih Jam Konsultasi</option>
+                <option value="jam1">jam1</option>
+                <option value="jam2">jam2</option>
+              </select>
+            </div>
+          </div>
+          <div class="button-regist">
+            <input type="submit" value="DAFTAR" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="flex-container">
+      <div class="navigasi">
+        <div class="postmind">
+          <img class="postmind" src="../img/logo.png" />
+        </div>
+        <br /><i class="fas fa-map-marker-alt"></i>&nbsp; Jl. Dr. Ir. H.
+        Soekarno No. 201<br />
+        <i class="fas fa-envelope"></i>&nbsp; info@ukdc.ac.id<br />
+        <i class="fas fa-phone-alt" id="logo"></i>&nbsp; 031-5946482<br />
+        <i class="far fa-clock"></i>&nbsp; 08.00 - 17.00
+      </div>
+      <div class="navigasi">
+        <h2>Informasi</h2>
+        <a class="footer" href="#">Kebijakan Privasi</a>
+        <a class="footer" href="#">Syarat dan Ketentuan</a>
+      </div>
+      <div class="navigasi circle">
+        <h2>Social Media</h2>
+        <a class="logo" href="https://www.instagram.com/infoukdc/"
+          ><i class="fab fa-instagram fa-lg"></i
+        ></a>
+        <a
+          class="logo"
+          href="https://www.youtube.com/c/UniversitasKatolikDarmaCendika/featured"
+          ><i class="fab fa-youtube fa-lg"></i
+        ></a>
+        <a
+          class="logo"
+          href="https://www.facebook.com/universitaskatolik.darmacendika"
+          ><i class="fa fa-facebook fa-lg"></i
+        ></a>
+        <a class="logo" href="https://twitter.com/ukdcofficial?lang=en"
+          ><i class="fa fa-twitter fa-lg"></i
+        ></a>
+      </div>
+    </div>
+    <div class="credit">
+      <p class="footer">Copyright &#169; 2021 DC Informatics</p>
+    </div>
+
+    <script src="../css/navfoot.js"></script>
+    <script>
+      const buttonUp = document.querySelector("#scroll-up");
+      const buttonDown = document.querySelector("#scroll-down");
+
+      buttonUp.onclick = function () {
+        document.getElementById("konselor").scrollTop -= 40;
+      };
+      buttonDown.onclick = function () {
+        document.getElementById("konselor").scrollTop += 40;
+      };
+    </script>
+  </body>
+</html>
