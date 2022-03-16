@@ -5,17 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Layanan PostMind</title>
-	<link rel="stylesheet" href="./css/stylelayanan.css">
+	<link rel="stylesheet" href="../css/stylelayanan.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<script src="https://kit.fontawesome.com/f9f60adc82.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="./css/navfoot-style.css">
-
+	<link rel="stylesheet" href="../css/navfoot-style.css">
 </head>
 <body>
 	<body style="font-family:Oswald">
     <header class="header">
 			<nav class="navbar">
-				<a href="#" class="navm-logo" ><img class="nav-logo" src="./img/logo2.png"></a>
+				<a href="#" class="navm-logo" ><img class="nav-logo" src="../img/postmind.png"></a>
 				<ul class="nav-menu">
 					<li class="nav-item">
 						<a href="#" class="nav-link">Layanan</a>
@@ -41,68 +40,89 @@
 			</nav>
 		</header>
 
-	<div class="toggle" id="toggle" onclick="menu-expand()">
+	<!-- <div class="toggle" id="toggle" onclick="menu-expand()">
         <i class="fas fa-plus" id="plus"></i>
-    </div>
-    <div class="menu" id="menu">
-		
-		<i></i>
-        <a href="#">
-		<i></i>
-            <i class="fas fa-theater-masks">Tes Kepribadian</i></a>
+    </div> -->
+    <!-- <div class="menu" id="menu">
 	
-        <a href="#">
-			<i></i>
-           <i class="fas fa-clipboard">Tes Gaya Belajar
-        </i></a>
 
-      <a href="history.html">
-			<i></i>
-           <i class="fas fa-history">Riwayat 
-        </i></a>
-
-      <a href="Halaman Daftar Konsultasi.html">
-			<i></i>
-           <i class="fas fa-user-tie">Konselor
-        </i></a>
-		
-       <a href="Teduh.html">
-			<i></i>
-           <i class="fas fa-microphone-alt">Teduh
-        </i></a>
-		
-      <a href="HalamanArtikel.html">
-			<i></i>
-           <i class="fas fa-newspaper">Artikel
-        </i></a>
-
-    </div>
+    </div> -->
 
     <!-- <img src="../gambar/embun sikawinten.png" width="600" height="400" style="margin-left:-230; margin-top:200px">
 	<img src="../gambar/sikawinten kanan.png" width="600" height="400" style="margin-left:990; margin-top:-415px"> -->
-	<img src="./img/image_betawi.png" width="520" height="auto" alt="">
+
+	<div class="body-layanan">
+		<div class="body-layanan-card">
+			<!-- tes kepribadian -->
+			<a href="#" class="link-card">
+			<div class="box-layanan">
+				<img src="../img/icons/tes-kepribadian-icon.png" alt="">
+				<p>Tes Kepribadian</p>
+			</div>
+			</a>
+			<!-- tes gaya belajar -->
+			<a href="#" class="link-card">
+			<div class="box-layanan">
+				<img src="../img/icons/tes-gaya-belajar-icon.png" alt="">
+				<p>Tes Gaya Belajar</p>
+			</div>
+			</a>
+			<!-- riwayat -->
+			<a href="#" class="link-card">
+			<div class="box-layanan">
+				<img src="../img/icons/riwayat-icon.png" alt="">
+				<p>Riwayat</p>
+			</div>
+			</a>
+			<!-- konselor -->
+			<a href="#" class="link-card">
+			<div class="box-layanan">
+				<img src="../img/icons/konselor-icon.png" alt="">
+				<p>Konselor</p>
+			</div>
+			</a>
+			<!-- Teduh -->
+			<a href="#" class="link-card">
+			<div class="box-layanan">
+				<img src="../img/icons/teduh-icon.png" alt="">
+				<p>Teduh</p>
+			</div>
+			</a>
+			<!-- artikel -->
+			<a href="#" class="link-card">
+			<div class="box-layanan">
+				<img src="../img/icons/artikel-icon.png" alt="">
+				<p>Artikel</p>
+			</div>
+			</a>
+		</div>
+		<div class="body-layanan-card">
+			<img src="../img/image_betawi_full.png" width="100%" height="auto" alt="">
+		</div>
+	</div>
+	
     <script>
-        var i = 0;
-        function expand()
-        {
-            if(i ==0)
-            {
-                document.getElementById("menu").style.transform ="scale(4)";
-                document.getElementById("plus").style.transform = "rotate(137deg)";
-                i = 1;
-            }
-            else
-            {
-                document.getElementById("menu").style.transform ="scale(0)";
-                document.getElementById("plus").style.transform = "rotate(0deg)";
-                i = 0;
-            }
-        }
+        // var i = 0;
+        // function expand()
+        // {
+        //     if(i ==0)
+        //     {
+        //         document.getElementById("menu").style.transform ="scale(4)";
+        //         document.getElementById("plus").style.transform = "rotate(137deg)";
+        //         i = 1;
+        //     }
+        //     else
+        //     {
+        //         document.getElementById("menu").style.transform ="scale(0)";
+        //         document.getElementById("plus").style.transform = "rotate(0deg)";
+        //         i = 0;
+        //     }
+        // }
     </script>
 	
 	<div class="flex-container">
 			<div class="navigasi">
-				<div class="postmind"><img class="postmind" src="./img/logo.png"></div>
+				<div class="postmind"><img class="postmind" src="../img/logo.png"></div>
 				<br><i class="fas fa-map-marker-alt"></i>&nbsp Jl. Dr. Ir. H. Soekarno No. 201<br>
 				<i class="fas fa-envelope"></i>&nbsp info@ukdc.ac.id<br>
 				<i class="fas fa-phone-alt" id="logo"></i>&nbsp 031-5946482<br>
@@ -121,6 +141,6 @@
 				<p class="foot">Copyright &#169 2021 DC Informatics</p>
 			</div>
 		<center>
-		<script src="../ALVIN/navfoot.js"></script>
+		<script src="../css/navfoot.js"></script>
 </body>
 </html>
