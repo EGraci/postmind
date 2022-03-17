@@ -1,5 +1,5 @@
 body {
-  background-color:#ffff;
+  background-color:white;
   font-family:Oswald, sans-serif;
   font-style: normal;
   overflow-x: hidden;
@@ -9,7 +9,7 @@ body {
 	border: 2px solid black;
 	border-radius: 5px;
 	font-weight: bold;
-	background-color: #FFFB9E;
+	background-color: #FFE162;
 }
 fieldset {
 	border: 2px solid black;
@@ -20,14 +20,14 @@ h3 {
   text-align: center;
 }
 .diri{
-	background-color: #FFFB9E;
+	background-color: #FFE162;
 	line-height: 30px;
 }
 input[type=submit]:hover {
-  background-color: #FFFB9E;
+  background-color: #FFE162;
 }
 input[type=reset]:hover {
-  background-color: #FFFB9E;
+  background-color: #FFE162;
 }
 input[type=submit] {
   width: 20%;
