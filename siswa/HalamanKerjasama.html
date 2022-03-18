@@ -1,0 +1,228 @@
+<html>
+	<head>
+	<title>Kerjasama PostMind</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=50%, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/berankonselor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"> </script>
+    <script src="https://kit.fontawesome.com/f9f60adc82.js" crossorigin="anonymous"></script>
+	  <link rel="stylesheet" href="../css/navfoot-style.css">
+	
+	</head>
+	<style>
+		
+	
+
+		.box {
+			width:500px;
+			height:400px;
+			background-color: #86C6F4;
+			text-align:center;
+			margin-top:-450px;
+			margin-left:330px;
+		}
+		
+		.wrapper-text{
+			text-align:center;
+			opacity:0;
+			animation:ani2 0.5s ease-out forwards;	
+		}
+		
+		.wrapper-text h2{
+			opacity:0;
+			margin:0;
+		}
+		
+		.wrapper-text h2{
+			animation: ani2 0.75s ease-out 1.5s forwards;
+		}
+		
+		@keyframes ani2{
+			100%{
+				opacity:1;
+			}
+		}
+		
+		.cover {
+			width: 100%;
+			height: 500px;
+			background-color: #86C6F4;
+			margin: auto;
+			margin-top : 50px;
+		}
+	
+		.cover2 {
+		width:200px;
+		height:170px;
+		background-color: #86C6F4;
+		border-radius:100%;
+		position:inline-block;
+		top:70px;
+		margin-left:500px;
+	
+		}
+		
+		.cover3 {
+		width:1000px;
+		height:150px;
+		background-color: #86C6F4;
+		margin:auto;
+		top:270px;
+		font-size:14px;
+		position:relative;
+		margin-left:100px;
+		}
+		
+		.bingkai {
+		width:50px;
+		height:100px;
+		background-color:#86C6F4;
+		margin:auto;
+		margin-left:50px;
+		
+		}
+		
+		.slider {
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%, -50%)
+		}
+
+		.slides{
+					display:flex;
+					width: 10rem;
+					overflow: hidden;
+
+		}
+
+		.slide{
+					width:10rem;
+					transition: .5s;
+
+		}
+		
+		slidetext {
+			display:flex;
+			width:30rem;
+			overflow:hidden;
+		
+		}
+	
+
+		.choose_1:checked ~ .slides > .s1{
+					margin-left:-0rem;
+		}
+
+		.choose_2:checked ~ .slides > .s1{
+					margin-left:-10rem;
+		}
+
+		.choose_3:checked ~ .slides > .s1{
+					margin-left:-20rem;
+		}
+		
+		
+		
+		.choose_1:checked ~ .slidetext > .s1{
+					margin-left:-0rem;
+		}
+
+		.choose_2:checked ~ .slidetext > .s1{
+					margin-left:-10rem;
+		}
+
+		.choose_3:checked ~ .slidetext > .s1{
+					margin-left:-20rem;
+		}
+		
+</style>
+
+
+	<body style="background-color: #ffffff">
+  	
+     <header class="header">
+			<nav class="navbar">
+				<a href="#" class="navm-logo" ><img class="nav-logo" src="../img/postmind.png"></a>
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a href="../Pages Siswa/Layanan.html" class="nav-link">Layanan</a>
+					</li>
+					<li class="nav-item">
+						<a href="../Pages Siswa/Beranda.html" class="nav-link">Tentang Postmind</a>
+					</li>
+					<li class="nav-item">
+						<a href="../Pages Siswa/HalamanKerjasama.html" class="nav-link">Kerjasama</a>
+					</li>
+					<li class="nav-masuk">
+						<a href="../Pages Siswa/login.html" class="navl-masuk">Masuk</a>
+					</li>
+					 <li class="nav-item">
+						<a href="../Pages Siswa/pendaftaran.html" class="nav-link">Daftar</a>
+					</li>
+				</ul>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</nav>
+		</header>
+
+    
+	<div class="cover">
+	<div class="bingkai">
+	<div class="slider">
+		<input type="radio" name="choose" class="choose_1" checked>
+		<input type="radio" name="choose" class="choose_2">
+		<input type="radio" name="choose" class="choose_3">
+		
+		<div class="slides">
+			<img src= "../img/ukdc-logo.png" alt="" class="slide s1" style="border-radius:100%">
+			<img src= "../img/logoUNM.png" alt="" class="slide" style="border-radius:100%">
+			<img src= "../img/logoUnpad.png" alt="" class="slide" style="border-radius:100%">
+	</div>
+	</div>
+	</div>
+	</div>
+
+
+	<table style="margin-left:350px; margin-top:50px; font-family:arial narrow">
+	
+	<tr>
+	<td width="300" height="10" align="center" style="background-color:#FFE162; border-radius:35px; border-style:none; "> 
+	<a href="#" style="text-decoration:none"><h3 style="margin-top:6px; color:black; ">PRASYARAT</h3></a></td>
+	<td width="300" height="10" align="center" style="background-color:#FFE162; border-radius:35px; border-style:none; "> 
+	<a href="#" style="text-decoration:none"><h3 style="margin-top:6px; color:black; ">DAFTAR</h3></a></td>
+	</tr>
+	</table>
+  <br>
+  
+<div class="flex-container">
+			<div class="navigasi">
+				<div class="postmind"><img class="postmind" src="../img/logo.png"></div>
+				<br><i class="fas fa-map-marker-alt"></i>&nbsp Jl. Dr. Ir. H. Soekarno No. 201<br>
+				<i class="fas fa-envelope"></i>&nbsp info@ukdc.ac.id<br>
+				<i class="fas fa-phone-alt" id="logo"></i>&nbsp 031-5946482<br>
+				<i class="far fa-clock"></i>&nbsp 08.00 - 17.00
+			</div>
+			<div class="navigasi circle">
+				<center><h2>Social Media</h2></center>
+				<a class="logo"href="https://www.instagram.com/infoukdc/"><i class="fab fa-instagram fa-lg"></i></a>
+				<a class="logo" href="https://www.youtube.com/c/UniversitasKatolikDarmaCendika/featured"><i class="fab fa-youtube fa-lg"></i></a>
+				<a class="logo" href="https://www.facebook.com/universitaskatolik.darmacendika"><i class="fa fa-facebook fa-lg"></i></a>
+				<a class="logo" href="https://twitter.com/ukdcofficial?lang=en"><i class="fa fa-twitter fa-lg"></i></a>
+			</div>
+		</div>
+		<center>
+			<div class="credit">
+				<p class="footer">Copyright &#169 2021 DC Informatics</p>
+			</div>
+		<center>
+		<script src="../css/navfoot.js"></script> 
+ 
+	</body>
+  
+</html>
