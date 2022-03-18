@@ -1,0 +1,374 @@
+<html>
+	<head>
+	<title>History PostMind</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=50%, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/a076d05399.js"> </script>
+  <script src="https://kit.fontawesome.com/f9f60adc82.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../ALVIN/navfoot-style.css">
+	
+	</head>
+	<style>
+		
+
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+
+		}
+
+    
+		.down1{
+			position:absolute;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background:  #86C6F4 ;
+			width:  55%;
+			height: 8%;
+			padding: 8px 25px;
+			border-radius: 5px;
+      
+      
+		}
+		
+		.down1 label{
+			font-size: 22px;
+			font-weight: 200;
+			display: block;
+			cursor: pointer;
+			line-height: 35px;
+		}
+		
+		.down1 label:hover{
+			color:white;
+		}
+		
+		.down2{
+			position:absolute;
+			top: 55%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background:  #86C6F4 ;
+			width:  55%;
+			height: 8%;
+			padding: 8px 25px;
+			border-radius: 5px;	
+		}
+		
+		.down2 label{
+			font-size: 22px;
+			font-weight: 200;
+			display: block;
+			cursor: pointer;
+			line-height: 35px;
+		}
+		.down2 label:hover{
+			color:white;
+		}
+		
+		.down3{
+			position:absolute;
+			top: 70%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background:  #86C6F4 ;
+			width:  55%;
+			height: 8%;
+			padding: 8px 25px;	
+			border-radius: 5px;
+		}
+		
+		.down3 label{
+			font-size: 22px;
+			font-weight: 200;
+			display: block;
+			cursor: pointer;
+			line-height: 35px;
+		}
+		
+		.down3 label:hover{
+			color:white;
+		}
+		
+		.button span {
+			float: right;
+			line-height: 35px;
+		}
+		
+		.down_test1 {
+			position:absolute;
+			top: 150%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background:  #FFFB9E;
+			width:  600px;
+			height: 40px;
+			padding: 8px 25px;
+			border-radius: 5px;
+			
+		}
+		.down_test1 label{
+			font-size: 16px;
+			font-weight: 200;
+			display: block;
+			cursor: pointer;
+			line-height: 25px;
+		}
+		
+		.down-test1 label:hover{
+			color:black;
+		}
+		
+		.button_test1 span {
+			float: right;
+			line-height: 20px;
+		}
+		
+		
+		.down_test2 {
+			position:absolute;
+			top: 350%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background:  #FFFB9E;
+			width:  600px;
+			height: 40px;
+			padding: 8px 25px;	
+			border-radius: 5px;
+			
+		}
+		.down_test2 label{
+			font-size: 16px;
+			font-weight: 200;
+			display: block;
+			cursor: pointer;
+			line-height: 25px;
+    
+		}
+		
+		.down-test2 label:hover{
+			color:black;
+		}
+		.button_test2 span {
+			float: right;
+			line-height: 20px;
+		}
+		
+		div ul {
+			position: absolute;
+			background: #BCDFF9;
+			list-style: none;
+			top: 75px;
+			width: 100%;
+			border-radius: 5px;
+			display:none;
+		}
+		
+		[id^=btn-1]:checked + ul{
+			display:block;
+		}
+		[id^=btn-2]:checked + ul{
+			display:block;
+		}
+		[id^=btn-3]:checked + ul{
+			display:block;
+		}
+		
+		div ul li {
+		line-height:40px;
+		padding: 8px 20 px;
+		cursor: pointer;
+		border-buttom: 1px solid rgba(0,0,0,0.2);
+		}
+		
+		div ul li label{
+			font-sixze: 18px;
+			display: block;
+		}
+		
+		div ul li a{
+			color: black;	
+			text-decoration: none;
+			margin-left: 30px;
+		}
+		
+		div ul ul{
+			position: static;
+			
+		}
+		
+		div ul ul li {
+			line-height: 20px;
+			padding-left: 30px;
+			border-bottom: none;
+		}
+		
+		div ul li span{
+			font-size: 20px;
+			float: right;
+			margin-top: 10px;
+			padding: 0 10px;
+		}
+		
+		div .history:before{
+			position: absolute;
+			content:'';
+			height: 20px;
+			width: 20px;
+			background: black;
+			right: 45px;
+			top: -10px;
+			transform: rotate(45deg);
+			z-index: -1;
+			
+		}
+		
+		
+		input{
+			display: none;
+		}
+
+    @media screen and (max-width: 600px) {
+    .down1{
+      width:100px;
+      height:70px; 
+      margin-top:-500px;
+    }
+
+      .down2{
+      width:100px;
+      height:70px; 
+    }
+
+      .down3{
+      width:100px;
+      height:70px; 
+    }
+    }
+    
+		
+	</style>
+
+
+	<body style="background-color: white">
+			<header class="header">
+			<nav class="navbar">
+				<a href="#" class="navm-logo" ><img class="nav-logo" src="../gambar/logo2.png"></a>
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a href="../Pages Siswa/Layanan.html" class="nav-link">Layanan</a>
+					</li>
+					<li class="nav-item">
+						<a href="../Pages Siswa/Beranda.html" class="nav-link">Tentang Postmind</a>
+					</li>
+					<li class="nav-item">
+						<a href="../Pages Siswa/HalamanKerjasama.html" class="nav-link">Kerjasama</a>
+					</li>
+					<li class="nav-masuk">
+						<a href="../Pages Siswa/login.html" class="navl-masuk">Masuk</a>
+					</li>
+					 <li class="nav-item">
+						<a href="../Pages Siswa/pendaftaran.html" class="nav-link">Daftar</a>
+					</li>
+				</ul>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</nav>
+		</header>
+		
+		<div class= "down3"> 
+			<label for="btn-3" class="button"> <b> Tes </b>
+			<span class="fas fa-caret-down"> </span>
+			</label>
+			<input type="checkbox" id="btn-3">
+			<ul class="history">
+				<li><a href="#"> Hasil Tes Kepribadian  &nbsp(4 Desember 2020)</a></li>
+				<li><a href="#"> Hasil Tes Gaya belajar &nbsp(5 Desember 2020)</a></li>
+			</ul>
+		</div>
+		
+		<div class= "down2"> 
+			<label for="btn-2" class="button"> <b> Teduh </b>
+			<span class="fas fa-caret-down"> </span>
+			</label>
+			<input type="checkbox" id="btn-2">
+			<ul class="history">
+				<li><a href="#"> Insecurity &nbsp(4 Desember 2020)</a></li>
+				<li><a href="#"> overthinking &nbsp (4 Desember 2020)</a></li>
+			</ul>
+		</div>
+		
+		<div class= "down1"> 
+			<label for="btn-1" class="button"> <b>Artikel</b>
+			<span class="fas fa-caret-down"> </span>
+			</label>
+			<input type="checkbox" id="btn-1">
+			<ul class="history">
+				<li><a href="#"> Terbitlah Sinar Pancarkan Pengetahuan &nbsp(4 Desember 2020)  </a></li>
+				<li><a href="#">  5 Tanda Orang Mudah Bergaul (5 Desember 2020)</a></li>
+			</ul>
+		</div>
+	
+		<img src="../gambar/betawicowok2.png" width="25%" style="margin-left:1%; margin-top:10px">
+		<img src="../gambar/betawicewek2.png" width="25%" style="margin-left:48%; margin-top:-10px">
+
+
+	<div class="flex-container">
+			<div class="navigasi">
+				<div class="postmind"><img class="postmind" src="../gambar/logo.png"></div>
+				<br><i class="fas fa-map-marker-alt"></i>&nbsp Jl. Dr. Ir. H. Soekarno No. 201<br>
+				<i class="fas fa-envelope"></i>&nbsp info@ukdc.ac.id<br>
+				<i class="fas fa-phone-alt" id="logo"></i>&nbsp 031-5946482<br>
+				<i class="far fa-clock"></i>&nbsp 08.00 - 17.00
+			</div>
+			<div class="navigasi">
+				<center><h2>Layanan</h2></center>
+				<div class="flex-container">
+					<div class="flex-item-left"><a href="../Pages Siswa/Gaya Belajar.html">Tes Gaya Belajar</a></div>
+					<div class="flex-item-right"><a href="../Pages Siswa/history.html">Riwayat</a></div>
+				</div>
+				<div class="flex-container">
+					<div class="flex-item-left"><a href="../Pages Siswa/kepribadian.html">Tes Kepribadian</a></div>
+					<div class="flex-item-right"><a href="../Pages Siswa/Halaman Daftar Konsultasi.html">Konselor</a></div>
+				</div>
+				<div class="flex-container">
+					<div class="flex-item-left"><a href="../Pages Siswa/HalamanArtikel.html">Artikel</a></div>
+				</div>
+					<div class="flex-container">
+					<div class="flex-item-left"><a href="../Pages Siswa/Teduh.html">Teduh</a></div>
+				</div>
+			</div>
+			<div class="navigasi">
+				<center><h2>Kategori</h2></center>
+				<a class="footer" href="../Pages Siswa/Beranda.html">Siswa</a>
+				<a class="footer" href="#">Sekolah</a>
+				<a class="footer" href="../Pages Siswa/Halaman Daftar Konsultasi.html">Konselor</a>
+			</div>
+			<div class="navigasi">
+				<center><h2>Informasi</h2></center>
+				<a class="footer" href="#">Kebijakan Privasi</a>
+				<a class="footer" href="#">Syarat dan Ketentuan</a>
+			</div>
+			<div class="navigasi circle">
+				<center><h2>Social Media</h2></center>
+				<a class="logo"href="https://www.instagram.com/infoukdc/"><i class="fab fa-instagram fa-lg"></i></a>
+				<a class="logo" href="https://www.youtube.com/c/UniversitasKatolikDarmaCendika/featured"><i class="fab fa-youtube fa-lg"></i></a>
+				<a class="logo" href="https://www.facebook.com/universitaskatolik.darmacendika"><i class="fa fa-facebook fa-lg"></i></a>
+				<a class="logo" href="https://twitter.com/ukdcofficial?lang=en"><i class="fa fa-twitter fa-lg"></i></a>
+			</div>
+		</div>
+		<center>
+			<div class="credit">
+				<p class="footer">Copyright &#169 2021 DC Informatics</p>
+			</div>
+		<center>
+		<script src="../ALVIN/navfoot.js"></script>
+	</body>
+
+</html>
