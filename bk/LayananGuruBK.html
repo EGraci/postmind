@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Guru	 BK</title>
+    <link rel="stylesheet" href="../css/berankonselor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"> </script>
+    <script src="https://kit.fontawesome.com/f9f60adc82.js" crossorigin="anonymous"></script>
+	  <link rel="stylesheet" href="../css/navfoot-style.css">
+</head>
+
+<body>
+  	<header class="header">
+			<nav class="navbar">
+				<a href="../bk/BerandaBK.html" class="navm-logo"><img class="nav-logo" src="../img/postmind.png"></a>
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a href="../bk/BerandaBK.html" class="nav-link">Layanan</a>
+					</li>
+					<li class="nav-item">
+						<a href="../bk/tentangpostmindBK.html" class="nav-link">Tentang Postmind</a>
+					</li>
+					<li class="nav-item">
+						<a href="../bk/HalamankerjasamaBK.html" class="nav-link">Kerjasama</a>
+					</li>
+					<li class="nav-masuk">
+						<a href="../bk/l" class="navl-masuk">Masuk</a>
+					</li>
+					 <li class="nav-item">
+						<a href="#" class="nav-link">Daftar</a>
+					</li>
+				</ul>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</nav>
+		</header>
+    <div class="toggle" id="toggle" onclick="menu-expand()">
+        <i class="fas fa-plus" id="plus"></i>
+    </div>
+    <div class="menu" id="menu">
+		<i></i>
+        <a href="../bk/nama siswa.html">
+            <i class="fas fa-file-text"> Hasil Tes Siswa</i>
+        </a>
+        <a href="../bk/Notifikasi.html">
+           <i class="fas fa-bell"> Notifikasi</i>
+        </a>
+    </div>
+    <!--<div class="kembali">
+      <a href="">
+        <img src="../img/arrow.png" width="50%" height="50%" style="margin-left:23%; margin-bottom:18%">
+      </a>
+    </div>-->
+    	
+	<div class="ikonbetawicowok">
+		<img src="../img/betawi1.png" width="25%">
+	</div> 
+	
+	<div class="ikonbetawicewek">
+		<img src="../img/betawi2.png" width="70%">
+	</div> 
+
+  
+    <div class="flex-container">
+			<div class="navigasi">
+				<div class="postmind"><img class="postmind" src="../img/logo.png"></div>
+				<br><i class="fas fa-map-marker-alt"></i>&nbsp Jl. Dr. Ir. H. Soekarno No. 201<br>
+				<i class="fas fa-envelope"></i>&nbsp info@ukdc.ac.id<br>
+				<i class="fas fa-phone-alt" id="logo"></i>&nbsp 031-5946482<br>
+				<i class="far fa-clock"></i>&nbsp 08.00 - 17.00
+			</div>
+			
+			<div class="navigasi circle">
+				<center><h2>Social Media</h2></center>
+				<a class="logo"href="https://www.instagram.com/infoukdc/" style=" line-height: 32px"><i class="fab fa-instagram fa-lg"></i></a>
+				<a class="logo" href="https://www.youtube.com/c/UniversitasKatolikDarmaCendika/featured" style=" line-height: 32px"><i class="fab fa-youtube fa-lg"></i></a>
+				<a class="logo" href="https://www.facebook.com/universitaskatolik.darmacendika" style=" line-height: 32px"><i class="fa fa-facebook fa-lg"></i></a>
+				<a class="logo" href="https://twitter.com/ukdcofficial?lang=en" style=" line-height: 32px"><i class="fa fa-twitter fa-lg"></i></a>
+			</div>
+		</div>
+		<center>
+			<div class="credit">
+				<p class="footer">Copyright &#169 2021 DC Informatics</p>
+			</div>
+		<center>
+      
+		<script src="../css/navfoot.js"></script>
+
+    <script>
+    var i = 0;
+        function expand()
+        {
+            if(i ==0)
+            {
+                document.getElementById("menu").style.transform ="scale(4)";
+                document.getElementById("plus").style.transform = "rotate(137deg)";
+                i = 1;
+            }
+            else
+            {
+                document.getElementById("menu").style.transform ="scale(0)";
+                document.getElementById("plus").style.transform = "rotate(0deg)";
+                i = 0;
+            }
+        }
+      </script>
+</body>
+</html>
