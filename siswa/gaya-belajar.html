@@ -11,19 +11,32 @@
   	<link href="../css/style.css" rel="stylesheet" type="text/css"/>
   	<script src="https://kit.fontawesome.com/f9f60adc82.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../css/navfoot-style.css">
-</style>
 </head>
+<style>
+	input[type="radio"]:checked + label{
+		background-color: #FFE162;
+	}
+	.input-gaya-belajar{
+		border:2px solid black;
+		background-color: aliceblue;
+		display: block;
+		width:50%;
+		cursor:pointer;
+		margin-bottom: 10px;
+	}
+	.gayabelajar{
+		display: none;
+	}
+	
+</style>
 <body>
 
   <header class="header">
 			<nav class="navbar">
-				<a href="BerandaFix.html" class="navm-logo" ><img class="nav-logo" src="../img/logo2.png"></a>
+				<a href="BerandaFix.html" class="navm-logo" ><img class="nav-logo" src="../img/postmind.png"></a>
 				<ul class="nav-menu">
 					<li class="nav-item">
 						<a href="Layanan.html" class="nav-link">Layanan</a>
-					</li>
-					<li class="nav-item">
-						<a href="BerandaFix.html" class="nav-link">Tentang Postmind</a>
 					</li>
 					<li class="nav-item">
 						<a href="HalamanKerjasama.html" class="nav-link">Kerjasama</a>
@@ -56,35 +69,30 @@
 		4. Keluar dari test sebelum test berakhir, maka harus mengulang test dari awal.
 		</td>
     </tr>
-	<tr>
-		<td><br><br>
-		</td>
-    </tr>
-   
-	<tr bgcolor="#86C6F4">
-		<td class="pilih">
-		Saya suka mecoret-coret dan bahkan catatan saya memiliki banyak gambar dan panah di dalamnya<br>
-		<input type="button" name="1" value="Tidak pernah berlaku untuk saya"><br>
-		<input type="button" name="2" value="Terkadang berlaku untuk saya"><br>
-		<input type="button" name="3" value="Sering berlaku untuk saya"><br>
-		</td>
-    </tr>
-	<tr>
-		<td>
-		</td>
-    </tr>
-	<tr bgcolor="#86C6F4">
-		<td class="pilih">
-		Ketika mecoba mengingat nomor telepon seseorang atau sesuatu yang baru seperti itu, saya terbantu dengan memikirkan gambarnya di pikiran<br>
-		<input type="button" name="1" value="Tidak pernah berlaku untuk saya"><br>
-		<input type="button" name="2" value="Terkadang berlaku untuk saya"><br>
-		<input type="button" name="3" value="Sering berlaku untuk saya"><br>
-		</td>
-    </tr>
-	</table>
-	<br><center><button>Selanjutnya&rarr;</button></center>
-  <br><br><br>
+	<form action="" method="post">
 
+		<tr style="background-color: #86C6F4;">
+			<td >
+			Saya suka mecoret-coret dan bahkan catatan saya memiliki banyak gambar dan panah di dalamnya<br>
+			<input id="1" class="gayabelajar" type="radio" name="gayabelajar" value=""><label for="1" class="input-gaya-belajar">Tidak pernah berlaku untuk saya</label>
+			
+			<input id="2" class="gayabelajar" type="radio" name="gayabelajar" value=""><label for="2" class="input-gaya-belajar">Terkadang berlaku untuk saya</label>
+			
+			<input id="3" class="gayabelajar" type="radio" name="gayabelajar" value=""><label for="3" class="input-gaya-belajar">Sering berlaku untuk saya</label>
+		</tr>
+		<tr style="background-color: #86C6F4;">
+			<td >
+			Ketika mecoba mengingat nomor telepon seseorang atau sesuatu yang baru seperti itu, saya terbantu dengan memikirkan gambarnya di pikiran<br>
+			<input id="4" class="gayabelajar" type="radio" name="gayabelajar2" value=""><label for="4" class="input-gaya-belajar">Tidak pernah berlaku untuk saya</label>
+			
+			<input id="5" class="gayabelajar" type="radio" name="gayabelajar2" value=""><label for="5" class="input-gaya-belajar">Terkadang berlaku untuk saya</label>
+			
+			<input id="6" class="gayabelajar" type="radio" name="gayabelajar2" value=""><label for="6" class="input-gaya-belajar">Sering berlaku untuk saya</label>
+		</tr>
+		</table>
+		<br><center><button>Selanjutnya&rarr;</button></center>
+	<br><br><br>
+	</form>
 	<div class="flex-container">
 			<div class="navigasi">
 				<div class="postmind"><img class="postmind" src="../img/logo.png"></div>
