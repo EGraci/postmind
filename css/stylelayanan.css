@@ -56,11 +56,14 @@ body {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .body-layanan-card {
     flex-direction: column;
   }
   .link-card {
     width: 100%;
+  }
+  .link-card {
+    margin: 10px 0px;
   }
 }
