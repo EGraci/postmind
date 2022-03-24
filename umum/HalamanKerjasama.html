@@ -3,16 +3,13 @@
 	<title>Kerjasama PostMind</title>
 	
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=50%, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/berankonselor.css">
+	<meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"> </script>
     <script src="https://kit.fontawesome.com/f9f60adc82.js" crossorigin="anonymous"></script>
 	  <link rel="stylesheet" href="../css/navfoot-style.css">
-	
+
 	</head>
 	<style>
-		
 	
 
 		.box {
@@ -39,104 +36,72 @@
 			animation: ani2 0.75s ease-out 1.5s forwards;
 		}
 		
-		@keyframes ani2{
-			100%{
-				opacity:1;
-			}
-		}
-		
 		.cover {
 			width: 100%;
-			height: 500px;
-			background-color: #86C6F4;
-			margin: auto;
+			background-color: white;
 			margin-top : 50px;
 		}
 	
-		.cover2 {
-		width:200px;
-		height:170px;
-		background-color: #86C6F4;
-		border-radius:100%;
-		position:inline-block;
-		top:70px;
-		margin-left:500px;
-	
-		}
-		
-		.cover3 {
-		width:1000px;
-		height:150px;
-		background-color: #86C6F4;
-		margin:auto;
-		top:270px;
-		font-size:14px;
-		position:relative;
-		margin-left:100px;
-		}
 		
 		.bingkai {
-		width:50px;
-		height:100px;
-		background-color:#86C6F4;
-		margin:auto;
-		margin-left:50px;
-		
+			padding:28px 20px;
+			background-color:#86C6F4;
+			margin:0px 20px;
+			border-radius:20px;
 		}
-		
-		.slider {
-			position:absolute;
-			top:50%;
-			left:50%;
-			transform: translate(-50%, -50%)
-		}
+
 
 		.slides{
-					display:flex;
-					width: 10rem;
-					overflow: hidden;
-
+			width: 100%;
+			padding:10px 0px;
+			overflow:auto;
+			white-space: nowrap;
+			text-align: center;
 		}
 
 		.slide{
-					width:10rem;
-					transition: .5s;
-
+			width:15rem;
+			transition: .5s;
+			padding:0px 20px;
+			height:auto;
+			display:inline-block;
 		}
 		
-		slidetext {
+		.slidetext {
 			display:flex;
 			width:30rem;
 			overflow:hidden;
 		
 		}
+		/* button group */
+		.button-group{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		.button-group > a{
+			margin:15px 20px;
+		}
+		.button-group > a > h3{
+			border-radius: 20px;
+			padding:8px;
+			width:200px;
+			text-align: center;
+		}
 	
-
-		.choose_1:checked ~ .slides > .s1{
-					margin-left:-0rem;
+		@media only screen and (max-width:425px){
+			.button-group{
+				flex-direction: column;
+			}
+			.button-group >a >h3{
+				font-size:16px;
+			}
+			.button-group > a{
+				margin:10px;
+			}
 		}
 
-		.choose_2:checked ~ .slides > .s1{
-					margin-left:-10rem;
-		}
-
-		.choose_3:checked ~ .slides > .s1{
-					margin-left:-20rem;
-		}
-		
-		
-		
-		.choose_1:checked ~ .slidetext > .s1{
-					margin-left:-0rem;
-		}
-
-		.choose_2:checked ~ .slidetext > .s1{
-					margin-left:-10rem;
-		}
-
-		.choose_3:checked ~ .slidetext > .s1{
-					margin-left:-20rem;
-		}
 		
 </style>
 
@@ -145,19 +110,10 @@
   	
      <header class="header">
 			<nav class="navbar">
-				<a href="BerandaFix.html" class="navm-logo" ><img class="nav-logo" src="../img/postmind.png"></a>
+				<a href="../siswa/BerandaFix.html" class="navm-logo" ><img class="nav-logo" src="../img/postmind.png"></a>
 				<ul class="nav-menu">
 					<li class="nav-item">
-						<a href="Layanan.html" class="nav-link">Layanan</a>
-					</li>
-					<li class="nav-item">
 						<a href="HalamanKerjasama.html" class="nav-link">Kerjasama</a>
-					</li>
-					<li class="nav-masuk">
-						<a href="login.html" class="navl-masuk">Masuk</a>
-					</li>
-					 <li class="nav-item">
-						<a href="pendaftaran.html" class="nav-link">Daftar</a>
 					</li>
 				</ul>
 				<div class="hamburger">
@@ -170,34 +126,22 @@
 
     
 	<div class="cover">
-	<div class="bingkai">
-	<div class="slider">
-		<input type="radio" name="choose" class="choose_1" checked>
-		<input type="radio" name="choose" class="choose_2">
-		<input type="radio" name="choose" class="choose_3">
-		
-		<div class="slides">
-			<img src= "../img/ukdc-logo.png" alt="" class="slide s1" style="border-radius:100%">
-			<img src= "../img/logoUNM.png" alt="" class="slide" style="border-radius:100%">
-			<img src= "../img/logoUnpad.png" alt="" class="slide" style="border-radius:100%">
-	</div>
-	</div>
-	</div>
+		<div class="bingkai">
+			<div class="slides">
+				<img src= "../img/ukdc-logo.png" alt="" class="slide s1" style="border-radius:100%">
+				<img src= "../img/logoUNM.png" alt="" class="slide" style="border-radius:100%">
+				<img src= "../img/logoUnpad.png" alt="" class="slide" style="border-radius:100%">
+			</div>
+		</div>
 	</div>
 
-
-	<table style="margin-left:350px; margin-top:50px; font-family:arial narrow">
-	
-	<tr>
-	<td width="300" height="10" align="center" style="background-color:#FFE162; border-radius:35px; border-style:none; "> 
-	<a href="#" style="text-decoration:none"><h3 style="margin-top:6px; color:black; ">PRASYARAT</h3></a></td>
-	<td width="300" height="10" align="center" style="background-color:#FFE162; border-radius:35px; border-style:none; "> 
-	<a href="#" style="text-decoration:none"><h3 style="margin-top:6px; color:black; ">DAFTAR</h3></a></td>
-	</tr>
-	</table>
+	<div class="button-group">
+		<a href="#" style="text-decoration:none"><h3 style="margin-top:6px; color:black;background-color:#FFE162; ">PRASYARAT</h3></a>
+		<a href="ajukan-kerjasama.html"text-decoration:none"><h3 style="margin-top:6px; color:black; background-color:#FFE162;">DAFTAR</h3></a>
+	</div>
   <br>
   
-<div class="flex-container">
+		<div class="flex-container">
 			<div class="navigasi">
 				<div class="postmind"><img class="postmind" src="../img/logo.png"></div>
 				<br><i class="fas fa-map-marker-alt"></i>&nbsp Jl. Dr. Ir. H. Soekarno No. 201<br>
@@ -218,8 +162,8 @@
 				<p class="footer">Copyright &#169 2021 DC Informatics</p>
 			</div>
 		<center>
+	<!-- script -->
 		<script src="../css/navfoot.js"></script> 
- 
 	</body>
   
 </html>
