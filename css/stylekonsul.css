@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Oswald, sans-serif;
 }
@@ -18,16 +22,20 @@ body {
   border-radius: 20px;
   padding: 10px;
   text-align: center;
-  margin: 10px 10px 10px 30px;
+  margin: 10px 0px;
   display: flex;
-  flex-direction: column;
 }
 
 .konselor {
   display: flex;
-  flex-direction: column;
-  height: 500px;
+  flex-direction: row;
   overflow-y: scroll;
+  padding: 20px;
+  width: 100%;
+}
+
+.konselor > label {
+  margin: 0px 10px;
 }
 
 .arrow-konselor {
@@ -37,9 +45,6 @@ body {
   cursor: pointer;
 }
 
-.konselor-card {
-  margin: 15px;
-}
 .img-konselor {
   width: 150px;
   height: auto;
@@ -48,7 +53,7 @@ body {
 /* konselor card regist */
 .main-konselor__regist {
   width: 70%;
-  margin: 20px auto;
+  margin: 0px auto;
 }
 
 .main-konselor__regist > h1 {
@@ -73,19 +78,6 @@ body {
   margin: 20px;
 }
 
-/* jenis-kelamin */
-.jenis-kelamin {
-  display: flex;
-  flex-direction: row;
-}
-
-.jenis-kelamin > label {
-  margin-left: 10px;
-}
-
-input[type="text"],
-input[type="number"],
-input[type="email"],
 select {
   width: 100%;
   padding: 12px;
@@ -132,12 +124,6 @@ select {
     height: 250px;
     flex-direction: row;
   }
-  .arrow-konselor {
-    display: none;
-  }
-  .konselor {
-    flex-direction: row;
-  }
   /* form width */
   .main-konselor__regist {
     width: 100%;
@@ -151,4 +137,19 @@ select {
   .main-konselor__regist {
     width: 100%;
   }
+}
+
+/* type radio */
+[type='radio'] {
+  position: absolute;
+  opacity: 0;
+}
+
+[type='radio'] + img {
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+[type='radio']:checked + img {
+  outline: 5px solid orange;
 }

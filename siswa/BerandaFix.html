@@ -1,4 +1,4 @@
-	<head>
+<head>
 	<title>Beranda PostMind</title>
 	
 	<meta charset="UTF-8">
@@ -7,7 +7,12 @@
 	
   <link href="../css/style.css" rel="stylesheet" type="text/css"/>
   <script src="https://kit.fontawesome.com/f9f60adc82.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="../css/navfoot-style.css">
+  <link rel="stylesheet" href="../css/navfoot-style.css">
+  <!-- external css and js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+
+	
 	</head>
 	<style>
 	
@@ -101,40 +106,6 @@
 
 		}
 		
-		slidetext {
-			display:flex;
-			width:30rem;
-			overflow:hidden;
-		
-		}
-	
-
-		.choose_1:checked ~ .slides > .s1{
-					margin-left:-0rem;
-		}
-
-		.choose_2:checked ~ .slides > .s1{
-					margin-left:-10rem;
-		}
-
-		.choose_3:checked ~ .slides > .s1{
-					margin-left:-20rem;
-		}
-		
-		
-		
-		.choose_1:checked ~ .slidetext > .s1{
-					margin-left:-0rem;
-		}
-
-		.choose_2:checked ~ .slidetext > .s1{
-					margin-left:-10rem;
-		}
-
-		.choose_3:checked ~ .slidetext > .s1{
-					margin-left:-20rem;
-		}
-		
 		.container {
 			width: 100%;
 			min-height: 200px;
@@ -171,7 +142,7 @@
 						<a href="Layanan.html" class="nav-link">Layanan</a>
 					</li>
 					<li class="nav-item">
-						<a href="HalamanKerjasama.html" class="nav-link">Kerjasama</a>
+						<a href="../umum/HalamanKerjasama.html" class="nav-link">Kerjasama</a>
 					</li>
 					<li class="nav-masuk">
 						<a href="login.html" class="navl-masuk">Masuk</a>
@@ -264,31 +235,28 @@
 				<a href="HalamanKerjasama.html" style="text-decoration:none"><h3 style="margin-top:10px; margin-bottom: 10px; color:black; ">Daftar Sekolah</h3></a></td>
 			</tr>
 	</table>
-	
-	<div class="cover">
-	<div class="bingkai">
-  </div>
-  <div class="parent-bingkai">
-    <div class="slider">
-		<input type="radio" name="choose" class="choose_1" checked>
-		<input type="radio" name="choose" class="choose_2">
-		<input type="radio" name="choose" class="choose_3">
-      <div class="slides">
-        <img src= "../img/3.jpeg" alt="" class="slide s1" style="border-radius:100%">
-        <img src= "../img/lala.jpeg" alt="" class="slide" style="border-radius:100%">
-        <img src= "../img/hendra.jpeg" alt="" class="slide" style="border-radius:100%">
-      </div>
-	  </div>
-    <div class="cover3">
-    <div class="slidetext">
-    <p><center>"PostMind membantu saya untuk dapat mengenali diri lebih baik. Mengenali apa yang saya mau dan apa yang saya butuhkan untuk mempersiapkan masa depan saya."</center></p>
-    <br><p>Yohana Christela - SMK Katolik St.Louis</p>
-    
-    </div>
-	</div>
-  </div>
-	</div><br><br><br>
 
+	<!-- gallery testimony -->
+	<div class="gallery js-flickity"
+	data-flickity-options='{ "wrapAround": true }'>
+		<div class="gallery-cell">
+			<img src= "../img/3.jpeg" alt="" class="slide s1" style="border-radius:100%">
+			<p>"PostMind membantu saya untuk dapat mengenali diri lebih baik. Mengenali apa yang saya mau dan apa yang saya butuhkan untuk mempersiapkan masa depan saya."</p>
+			<p style="margin-top:10px;"><small>Yohana Christela - SMK Katolik St.Louis</small></p>
+		</div>
+		<div class="gallery-cell">
+			<img src= "../img/lala.jpeg" alt="" class="slide" style="border-radius:100%">
+			<p>"PostMind membantu saya untuk dapat mengenali diri lebih baik. Mengenali apa yang saya mau dan apa yang saya butuhkan untuk mempersiapkan masa depan saya."</p>
+			<p style="margin-top:10px;"><small>Yohana Christela - SMK Katolik St.Louis</small></p>
+		</div>
+		<div class="gallery-cell">
+			<img src= "../img/hendra.jpeg" alt="" class="slide" style="border-radius:100%">
+			<p>"PostMind membantu saya untuk dapat mengenali diri lebih baik. Mengenali apa yang saya mau dan apa yang saya butuhkan untuk mempersiapkan masa depan saya."</p>
+			<p style="margin-top:10px;"><small>Yohana Christela - SMK Katolik St.Louis</small></p>
+		</div>
+	</div>
+
+	<!-- footer -->
 	<div class="flex-container">
 			<div class="navigasi">
 				<div class="postmind"><img class="postmind" src="../img/logo.png"></div>

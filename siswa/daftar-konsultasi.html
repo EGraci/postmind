@@ -17,22 +17,22 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <!-- header in every page -->
     <header class="header">
       <nav class="navbar">
-        <a href="#" class="navm-logo"
-          ><img class="nav-logo" src="../img/postmind.png"
-        /></a>
+        <a href="#" class="navm-logo">
+          <img class="nav-logo" src="../img/postmind.png" />
+        </a>
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="Layanan.html" class="nav-link">Layanan</a>
           </li>
           <li class="nav-item">
-            <a href="BerandaFix.html" class="nav-link">Tentang Postmind</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Kerjasama</a>
+            <a href="../umum/HalamanKerjasama.html" class="nav-link">
+              Kerjasama
+            </a>
           </li>
           <li class="nav-masuk">
             <a href="login.html" class="navl-masuk">Masuk</a>
@@ -51,43 +51,96 @@
 
     <!-- main content -->
     <div class="main-konselor__body">
-      <div class="main-konselor__child">
-        <button class="arrow-konselor" id="scroll-up">
-          <i class="fa-solid fa-chevron-up fa-2xl"></i>
-        </button>
-        <!-- content konselor (isi nya konselor-konselor) -->
-        <div class="konselor" id="konselor">
-          <div class="konselor-card">
-            <img src="../img/boy 2.png" alt="konselor1" class="img-konselor" />
-            <p>Konselor 1</p>
-          </div>
-          <div class="konselor-card">
-            <img src="../img/boy.png" alt="konselor1" class="img-konselor" />
-            <p>Konselor 2</p>
-          </div>
-          <div class="konselor-card">
-            <img src="../img/boy 2.png" alt="konselor1" class="img-konselor" />
-            <p>Konselor 3</p>
-          </div>
-          <div class="konselor-card">
-            <img src="../img/man.png" alt="konselor1" class="img-konselor" />
-            <p>Konselor 4</p>
-          </div>
-        </div>
-        <button class="arrow-konselor" id="scroll-down">
-          <i class="fa-solid fa-chevron-down fa-2xl"></i>
-        </button>
-      </div>
       <!-- form registrasi -->
       <div class="main-konselor__regist">
         <h1>Konsultasi dengan Psikolog</h1>
         <form action="" method="post">
           <div class="konselor-form">
-            <div class="input-form" style="width: 100%">
+            <div class="input-form" style="width: 100%;">
               <div class="label-form">
-                <label for="nama-lengkap">Nama Lengkap</label>
+                <label for="nama-lengkap">Pilih Psikolog</label>
               </div>
-              <input type="text" name="nama-lengkap" id="nama-lengkap" />
+              <div class="main-konselor__child">
+                <button class="arrow-konselor" type="button" id="scroll-up">
+                  <i class="fa-solid fa-chevron-left fa-2xl"></i>
+                </button>
+                <!-- content konselor (isi nya konselor-konselor) -->
+                <div class="konselor" id="konselor">
+                  <label>
+                    <input
+                      type="radio"
+                      name="konselor"
+                      id="konselor1"
+                      value="konselor1"
+                    />
+                    <img
+                      src="../img/boy 2.png"
+                      alt="konselor1"
+                      class="img-konselor"
+                    />
+                    <p>Konselor 1</p>
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="konselor"
+                      id="konselor2"
+                      value="konselor2"
+                    />
+                    <img
+                      src="../img/boy.png"
+                      alt="konselor2"
+                      class="img-konselor"
+                    />
+                    <p>Konselor 2</p>
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="konselor"
+                      id="konselor3"
+                      value="konselor3"
+                    />
+                    <img
+                      src="../img/boy 2.png"
+                      alt="konselor3"
+                      class="img-konselor"
+                    />
+                    <p>Konselor 3</p>
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="konselor"
+                      id="konselor4"
+                      value="konselor4"
+                    />
+                    <img
+                      src="../img/boy.png"
+                      alt="konselor4"
+                      class="img-konselor"
+                    />
+                    <p>Konselor 4</p>
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="konselor"
+                      id="konselor5"
+                      value="konselor5"
+                    />
+                    <img
+                      src="../img/boy 2.png"
+                      alt="konselor5"
+                      class="img-konselor"
+                    />
+                    <p>Konselor 5</p>
+                  </label>
+                </div>
+                <button class="arrow-konselor" type="button" id="scroll-down">
+                  <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                </button>
+              </div>
             </div>
             <div class="input-form">
               <div class="label-form">
@@ -123,35 +176,40 @@
         <div class="postmind">
           <img class="postmind" src="../img/logo.png" />
         </div>
-        <br /><i class="fas fa-map-marker-alt"></i>&nbsp; Jl. Dr. Ir. H.
-        Soekarno No. 201<br />
-        <i class="fas fa-envelope"></i>&nbsp; info@ukdc.ac.id<br />
-        <i class="fas fa-phone-alt" id="logo"></i>&nbsp; 031-5946482<br />
-        <i class="far fa-clock"></i>&nbsp; 08.00 - 17.00
+        <br />
+        <i class="fas fa-map-marker-alt"></i>
+        &nbsp; Jl. Dr. Ir. H. Soekarno No. 201
+        <br />
+        <i class="fas fa-envelope"></i>
+        &nbsp; info@ukdc.ac.id
+        <br />
+        <i class="fas fa-phone-alt" id="logo"></i>
+        &nbsp; 031-5946482
+        <br />
+        <i class="far fa-clock"></i>
+        &nbsp; 08.00 - 17.00
       </div>
-      <div class="navigasi">
-        <h2>Informasi</h2>
-        <a class="footer" href="#">Kebijakan Privasi</a>
-        <a class="footer" href="#">Syarat dan Ketentuan</a>
-      </div>
+
       <div class="navigasi circle">
         <h2>Social Media</h2>
-        <a class="logo" href="https://www.instagram.com/infoukdc/"
-          ><i class="fab fa-instagram fa-lg"></i
-        ></a>
+        <a class="logo" href="https://www.instagram.com/infoukdc/">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
         <a
           class="logo"
           href="https://www.youtube.com/c/UniversitasKatolikDarmaCendika/featured"
-          ><i class="fab fa-youtube fa-lg"></i
-        ></a>
+        >
+          <i class="fab fa-youtube fa-lg"></i>
+        </a>
         <a
           class="logo"
           href="https://www.facebook.com/universitaskatolik.darmacendika"
-          ><i class="fa fa-facebook fa-lg"></i
-        ></a>
-        <a class="logo" href="https://twitter.com/ukdcofficial?lang=en"
-          ><i class="fa fa-twitter fa-lg"></i
-        ></a>
+        >
+          <i class="fa fa-facebook fa-lg"></i>
+        </a>
+        <a class="logo" href="https://twitter.com/ukdcofficial?lang=en">
+          <i class="fa fa-twitter fa-lg"></i>
+        </a>
       </div>
     </div>
     <div class="credit">
@@ -159,16 +217,26 @@
     </div>
 
     <script src="../css/navfoot.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-      const buttonUp = document.querySelector("#scroll-up");
-      const buttonDown = document.querySelector("#scroll-down");
-
-      buttonUp.onclick = function () {
-        document.getElementById("konselor").scrollTop -= 40;
-      };
-      buttonDown.onclick = function () {
-        document.getElementById("konselor").scrollTop += 40;
-      };
+      $('#scroll-up').click(function () {
+        event.preventDefault()
+        $('#konselor').animate(
+          {
+            scrollLeft: '-=170px',
+          },
+          'slow',
+        )
+      })
+      $('#scroll-down').click(function () {
+        event.preventDefault()
+        $('#konselor').animate(
+          {
+            scrollLeft: '+=170px',
+          },
+          'slow',
+        )
+      })
     </script>
   </body>
 </html>

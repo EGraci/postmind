@@ -1,67 +1,68 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: #ffff;
-    font-family: Oswald;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #ffff;
+  font-family: Oswald;
+  overflow-x: hidden;
 }
 
 .beranda {
-    border: black 2px solid;
-    position: absolute;
-    top: 30%;
-    left: 48%;
-    transform: translate(-50%, -50%);
-    width: 40%;
-    color: black;
-    margin: 10px 10px;
-    font-size: 17px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border-radius: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
+  border: black 2px solid;
+  position: absolute;
+  top: 30%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  color: black;
+  margin: 10px 10px;
+  font-size: 17px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
 }
 
 .beranda:hover {
-    background-color: #ffe162;
+  background-color: #ffe162;
 }
 
 .notif {
-    border: black 2px solid;
-    position: absolute;
-    top: 52%;
-    left: 48%;
-    transform: translate(-50%, -50%);
-    width: 40%;
-    color: black;
-    margin: 10px 10px;
-    font-size: 17px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border-radius: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
+  border: black 2px solid;
+  position: absolute;
+  top: 52%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  color: black;
+  margin: 10px 10px;
+  font-size: 17px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
 }
 
 .notif:hover {
-    background-color: #ffe162;
+  background-color: #ffe162;
 }
 
-.ikonbetawicewek{
-	margin-left:75%;
-	margin-top:-38%;
+.ikonbetawicewek {
+  margin-left: 75%;
+  margin-top: -38%;
 }
 
-.kembali{
-    width: 40px;
-    height:40px;
-    background-color: #BF7E04;
-    border-radius:100%;
-    margin-left: 50px;
-    margin-top:45px;
+.kembali {
+  width: 40px;
+  height: 40px;
+  background-color: #bf7e04;
+  border-radius: 100%;
+  margin-left: 50px;
+  margin-top: 45px;
 }
