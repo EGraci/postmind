@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>POSTMIND</title>
-	<link rel="stylesheet" type="text/css" href="../css/style2.css">	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 	 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
   <script src="https://kit.fontawesome.com/f9f60adc82.js" crossorigin="anonymous"></script>
@@ -12,11 +12,8 @@
 <body>
 <header class="header">
 			<nav class="navbar"> 
-				<a href="#" class="navm-logo" ><img class="nav-logo" src="../img/postmind.png"></a>
+				<a href="./BerandaFix.html" class="navm-logo" ><img class="nav-logo" src="../img/postmind.png"></a>
 				<ul class="nav-menu">
-					<li class="nav-item">
-						<a href="Layanan.html" class="nav-link">Layanan</a>
-					</li>
 					<li class="nav-item">
 						<a href="../umum/HalamanKerjasama.html" class="nav-link">Kerjasama</a>
 					</li>
@@ -38,14 +35,14 @@
     <p style="border: 1px solid rgb(204, 204, 204); border-radius: 20px; padding: 8px; display: block; width:450px; background-color: #BCDFF9; text-align: center; margin:0px auto;">Login</p>
   </div>
 
-	<form> 
+	<form class="form-login"> 
     <div class="image-parent">
-				<img src="../img/logo.png" width="120" height="auto" class="img-form">
+				<img src="../img/logo.png" width="120" height="auto" id="img-form">
 		</div>
-      <label class="login">Nama Pengguna</label>
-      <input name="user" type="text" size="12" required>
-      <label class="login">Kata Sandi</label>
-      <input name="pass" type="password" size="12" required><br><br>
+      <label class="login" for="user">Nama Pengguna</label>
+      <input name="user" id="user" type="text" size="12" required>
+      <label class="login" for="id">Kata Sandi</label>
+      <input name="pass" id="pass" type="password" required><br><br>
 		<br><br>
     <div class="button">
       <button onclick="window.location.href='pendaftaran.html'">Daftar</button>

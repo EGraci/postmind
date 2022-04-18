@@ -8,65 +8,12 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<link rel="stylesheet" type="text/css" href="../css/style2.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 	<script src="https://kit.fontawesome.com/f9f60adc82.js" crossorigin="anonymous">
 	</script>
 	<link rel="stylesheet" href="../css/navfoot-style.css">
-	
-	<style>
-		* {
-		  box-sizing: border-box;
-		}
-		
-		/* Create two equal columns that floats next to each other */
-		.column1 {
-		  float: left;
-		  width: 55%;
-		  padding: 10px;
-		  height: auto; /* Should be removed. Only for demonstration */
-		}
-		.column2 {
-		  margin-top: 15%;
-		  margin-bottom: 15%;
-		  
-		  height: auto;
-		  float: left;
-		  width: 45%;
-		  padding: 10px;
-		   /* Should be removed. Only for demonstration */
-		}
-		.row{
-			margin-right: 30px;
-		}
-	
-		/* Clear floats after the columns */
-		.row:after {
-		  content: "";
-		  display: table;
-		  clear: both;
-		}
-
-		.imgres {
-  		width: 100%;
-  		max-width: 400px;
-  		height: auto;
-		}
-		
-		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-		@media screen and (max-width: 600px) {
-		  .column1 {
-			width: 100%;
-		  }
-		  .column2 {
-			  width: 100%;
-		  }
-		  .row{
-			  margin: 0;
-		  }
-		}
-		</style>
 </head>
 
 <body style="background-color: #FFFF;">
@@ -78,14 +25,8 @@
 					<li class="nav-item">
 						<a href="Layanan.html" class="nav-link">Layanan</a>
 					</li>
-					<li class="nav-item">
-						<a href="../umum/HalamanKerjasama.html" class="nav-link">Kerjasama</a>
-					</li>
-					<li class="nav-masuk">
-						<a href="login.html" class="navl-masuk">Masuk</a>
-					</li>
 					 <li class="nav-item">
-						<a href="pendaftaran.html" class="nav-link">Daftar</a>
+						<a href="BerandaFix.html" class="nav-link">Keluar</a>
 					</li>
 				</ul>
 				<div class="hamburger">
@@ -95,32 +36,31 @@
 				</div>
 			</nav>
 		</header>
-	<div class="row">
+		<h3 style="margin-top:20px;">Hasil Tes Gaya Belajar</h3>
+	<div class="row-gayabelajar">
 		<div class="column1" >
 			<img src="../img/Vaudiotori.png" class="imgres" >
 		</div>
-		<div class="column2 " style="border: 1px ; padding: 15px;background-color:#86C6F4; text-align: justify;
-  
-		border-radius: 10px;">
-			<p>Ananda akan merasa nyaman belajar dengan menyaksikan simulasi topik yang dipelajari. Ia 
+		<div class="column2 " style="border: 1px ;text-align: justify;">
+			<p style="background-color:#9ccdf0;padding: 18px;border-radius: 10px;">Ananda akan merasa nyaman belajar dengan menyaksikan simulasi topik yang dipelajari. Ia 
 				dapat konsentrasi dalam waktu lama terhadap bacaan. Tulisan tangannya cenderung mudah dibaca. 
 				Ia memiliki daya imajinasi yang kuat karena mampu memvisualisasikan secara detail. Saat tidak 
 				berkegiatan aktif, ia cenderung mencoret-coret atau menggambar sesuatu. Bila dalam lingkungan baru, 
 				ia seringkali melihat sekeliling untuk mempelajari keadaan. Ananda memiliki kendala untuk mengingat 
 				instruksi verbal kecuali jika ditulis.</p>
+					<small>
+						<p style="display: block;margin:10px; text-align: left;">Disclaimer: <br>
+					Jika hasil tes kepribadian belum sesuai dengan diri anda,
+					<br>silahkan menghubungi konselor dengan cara klik button dibawah ini</p>
+					</small>
+					<div class="center-object">
+			<a href="./daftar-konsultasi.html">
+				<button name ="submit"  type="submit" href="daftar-konsultasi.html">Hubungi Konselor</button>
+			</a>
+      <button  type="submit">Unduh</button><br><br><br>
 		</div>
-	</div>
-			
-	<p style="border: 1px solid rgb(204, 204, 204); padding: 
-	15px; display: block; padding-left: 40px; background: #86C6F4; text-align: left;">Disclaimer<br>
-				Jika hasil tes kepribadian belum sesuai dengan diri anda,
-				<br>silahkan menghubungi konselor dengan cara klik button dibawah ini</p><br>
-
-	<form action="./daftar-konsultasi.html" style="text-align: center;">
-		
-		<button name ="submit"  type="submit" href="daftar-konsultasi.html">Hubungi Konselor</button>
-        <button name ="submit"  type="submit">Unduh</button><br><br><br>
-    </form><br>
+		</div>
+	</div>		
 	
 	<div class="flex-container">
 			<div class="navigasi">
