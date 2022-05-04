@@ -61,6 +61,7 @@
       <div class="form-title">
         <h2>Ajukan Kerjasama</h2>
       </div>
+      <div id="container"></div>
       <div class="form-body">
         <form action="./ajukan-kerjasama.html" method="get">
           <div class="konselor-form">
@@ -80,13 +81,13 @@
               <div class="label-form">
                 <label for="telepon-sekolah">No Telepon Sekolah</label>
               </div>
-              <input type="text" name="telepon-sekolah" id="telepon-sekolah" />
+              <input type="text" name="telepon-sekolah" id="telepon-sekolah" onkeypress="return checkNumber(event)" />
             </div>
             <div class="input-form">
               <div class="label-form">
                 <label for="guru-bk">Nama Guru BK</label>
               </div>
-              <input type="text" name="guru-bk" id="guru-bk" />
+              <input type="text" name="guru-bk" id="guru-bk"  />
             </div>
           </div>
           <div class="button-regist">
@@ -136,5 +137,16 @@
 		<center>
     <!-- script -->
     <script src="../css/navfoot.js"></script>
+    <!-- script validation input number -->
+    <script>
+      function checkNumber(evt){
+        evt = (evt) ? evt : window.event;
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            return false;
+        }
+      return true;
+      }
+    </script>
   </body>
 </html>
