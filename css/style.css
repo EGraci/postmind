@@ -429,6 +429,20 @@ table {
   margin-bottom: 1%;
 }
 
+/* tampilan error login */
+.error {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+.error > p {
+  text-align: center;
+  background-color: rgb(252, 141, 141);
+  max-width: 220px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 /* ---------------------------------style ini buat halaman  login*/
 #img-form {
   position: absolute;

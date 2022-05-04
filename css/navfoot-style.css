@@ -41,11 +41,6 @@
   margin-top: 15px;
 }
 
-.postmind {
-  width: 100px;
-  height: 100px;
-}
-
 li {
   list-style: none;
 }
@@ -121,16 +116,6 @@ a:hover {
   font-family: Oswald;
 }
 
-.navigasi {
-  vertical-align: top;
-  text-align: left;
-  display: inline-block;
-  justify-content: space-between;
-  margin-right: 15px;
-  margin-left: 15px;
-  padding-right: 10px;
-}
-
 a.footer {
   font-family: Oswald;
   font-size: 18;
@@ -163,6 +148,7 @@ a.logo {
 
 .credit p {
   background: #86c6f4;
+  padding: 10px 0px;
 }
 
 p.footer {
@@ -171,13 +157,10 @@ p.footer {
 }
 
 .flex-container {
+  background: #86c6f4;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  text-align: center;
-  text-decoration: none;
-  font-family: Oswald;
-  background: #86c6f4;
 }
 
 .flex-item-left a {
@@ -196,6 +179,34 @@ p.footer {
   color: black;
   font-size: 15px;
   text-decoration: none;
+}
+
+.logo-postmind {
+  width: 100px;
+  height: auto;
+}
+
+.navigasi {
+  display: flex;
+  padding: 20px;
+}
+
+.circle {
+  flex-direction: column;
+}
+
+.title-media {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.information {
+  max-width: 100%;
+  text-align: left;
+}
+
+.footer {
+  width: 100%;
 }
 
 @media screen and (max-width: 825px) {
@@ -250,11 +261,13 @@ p.footer {
   .navigasi {
     vertical-align: top;
     text-align: center;
-    display: inline-block;
-    justify-content: space-between;
     margin-right: 15px;
     margin-left: 15px;
     padding-right: 10px;
+  }
+  /* sytle information */
+  .information {
+    max-width: 100%;
   }
 
   .footer {
