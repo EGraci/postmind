@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto Slab');
+body {
+  font-family: 'Roboto Slab';
+}
 
 * {
   margin: 0;
@@ -71,7 +74,6 @@ a:hover {
 
 .nav-masuk {
   margin-right: 20px;
-  font-family: Oswald;
   font-size: 20px;
   background-color: #ffe162;
   color: black;
@@ -80,7 +82,6 @@ a:hover {
 
 .nav-link {
   font-size: 20px;
-  font-family: Oswald;
   color: black;
   text-align: center;
   float: left;
@@ -92,7 +93,6 @@ a:hover {
 }
 
 .navl-masuk {
-  font-family: Oswald;
   font-size: 20px;
   color: black;
   padding: 0 25px;
@@ -106,18 +106,15 @@ a:hover {
 .footer {
   background-color: #86c6f4;
   width: 100%;
-  font-family: Oswald;
   text-align: center;
 }
 
 .footer h2 {
   background-color: #86c6f4;
   color: black;
-  font-family: Oswald;
 }
 
 a.footer {
-  font-family: Oswald;
   font-size: 18;
   color: black;
   text-decoration: none;

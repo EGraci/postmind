@@ -1,16 +1,15 @@
 /* ---------------------------------------------------style utama */
+@import url('https://fonts.googleapis.com/css?family=Roboto Slab');
 html {
   scroll-behavior: smooth;
 }
 
 body {
   background-color: white;
-  font-family: Oswald, sans-serif;
-  font-style: normal;
+  font-family: 'Roboto Slab';
   overflow-x: hidden;
 }
 .border {
-  font-family: Oswald, sans-serif;
   border: 2px solid black;
   border-radius: 5px;
   font-weight: bold;
@@ -19,10 +18,6 @@ body {
 fieldset {
   border: 2px solid black;
   border-radius: 5px;
-}
-h3 {
-  font-size: 30px;
-  text-align: center;
 }
 .diri {
   background-color: #ffe162;
@@ -43,6 +38,7 @@ input[type='submit'] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: 'Roboto Slab';
 }
 input[type='reset'] {
   width: 20%;
@@ -56,8 +52,6 @@ input[type='reset'] {
 .title {
   margin: 20px auto 0px auto;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 .gallery {
   margin: 70px 0px;
@@ -99,10 +93,18 @@ input[type='reset'] {
   margin: 20px 0px;
 }
 
+/* style button universal */
+.button__univ {
+  background: #ffe162;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
 /* ------------------------------------------------style beranda */
 .box {
   width: 50%;
-  height: 400px;
   background-color: #ffff;
   text-align: center;
   margin-left: auto;
@@ -120,7 +122,6 @@ input[type='reset'] {
   opacity: 0;
   margin: 0px;
   font-size: 20px;
-  font-family: Oswald;
 }
 
 .wrapper-text h2 {
@@ -138,6 +139,10 @@ input[type='reset'] {
   transition: 0.5s;
 }
 
+#post-desc {
+  line-height: 28px;
+}
+
 @media only screen and (max-width: 600px) {
   #post-desc {
     font-size: 18px;
@@ -152,6 +157,56 @@ input[type='reset'] {
     font-size: 16px;
     margin-top: 30px;
   }
+}
+
+/* style button masuk */
+.button__box {
+  background: #ffe162;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* style content__box-button */
+.content__box-button {
+  text-align: center;
+  margin: 4rem 0px;
+}
+
+/* style content__box-desc */
+.content__box-desc-child > img {
+  width: 150px;
+  height: auto;
+  margin: 10px 0px;
+}
+
+/* style p in box-desc-child */
+.content__box-desc-child > p {
+  max-width: 340px;
+  text-align: justify;
+  margin: 20px 0px;
+  line-height: 23px;
+}
+
+.content__box-desc {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.content__box-desc-child {
+  margin: 0px 20px;
+  text-align: center;
+  height: 500px;
+  /* style card */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 /* --------------------------------------style daftar konsultasi */
@@ -376,10 +431,11 @@ select {
 input {
   padding: 2%;
   float: left;
+  border-radius: 15px;
+  border: 0px solid;
 }
 
 button {
-  font-family: 'Oswald', sans-serif;
   font-size: 18px;
   float: center;
   width: 150px;
