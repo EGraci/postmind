@@ -31,8 +31,8 @@
 			</nav>
 		</header>
 <div id="container"></div>
-<div class="container" style="background-color: white">
-	<!-- write action -->
+<div class="container" style="background-color: white;font-size: 16px;">
+	<!-- write action --> 
   <form action="Layanan.html" method="post" class="form-daftar" onsubmit="return checkForm()" name="form-input">
 	<div class="row">
 		<div class="col-100">
@@ -62,7 +62,7 @@
         <label for="lname">Tanggal Lahir</label>
       </div>
       <div class="col-75">
-	  <input type="date" id="date" name="date" placeholder="" >
+	    <input type="date" onchange="checkDate()" id="date" name="date" placeholder="" >
       </div>
     </div>
 	<div class="row">
@@ -147,6 +147,7 @@
 			</div>
 		<center>
 		<script>
+      let age = 0;
 			// validation form
 			function checkForm(){
 				let container = document.getElementById('container')
@@ -162,7 +163,11 @@
 					container.innerHTML = "<div class='error'><p>Isi semua inputan</p></div>";
 					setTimeout(removeAlert, 4000);
 					return false;
-				}
+				}else if(age < 13){
+          container.innerHTML = "<div class='error'><p>Usia anda tidak memenuhi kriteria</p></div>";
+          setTimeout(removeAlert, 4000);
+          return false;
+        }
 			}
 
 			// clear alert
@@ -170,6 +175,20 @@
 				let container = document.getElementById('container')
 				container.innerHTML = '';
 			}
+
+      // cek umur pendaftar 
+      function checkDate(){
+        let container = document.getElementById('container')
+        let date = new Date().getFullYear()
+        let ageInput = document.getElementById('date').value
+        let resultInput = new Date(ageInput).getFullYear()
+        let ageResult = date - resultInput
+        age = ageResult
+        if(ageResult < 13){
+          container.innerHTML = "<div class='error'><p>Usia anda tidak memenuhi kriteria</p></div>";
+          setTimeout(removeAlert, 4000);
+        }
+      }
 		</script>
 		<script src="../css/navfoot.js"></script>
 </body>

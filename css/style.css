@@ -376,6 +376,7 @@ select {
   height: 25px;
   width: 150px;
   margin: 0;
+  border-radius: 15px;
 }
 .form-login > input[type='text'] {
   margin-bottom: 1%;
@@ -383,6 +384,7 @@ select {
   border: 1px solid #9c9c9c;
   height: 25px;
   width: 150px;
+  border-radius: 15px;
 }
 
 .form-login > button {

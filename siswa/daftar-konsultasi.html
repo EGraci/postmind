@@ -45,12 +45,12 @@
     <div class="main-konselor__body">
       <!-- form registrasi -->
       <div class="main-konselor__regist">
-        <h1>Konsultasi dengan Psikolog</h1>
+        <h1>Konsultasi dengan Konselor</h1>
         <form action="" method="post">
           <div class="konselor-form">
             <div class="input-form" style="width: 100%;">
               <div class="label-form">
-                <label for="nama-lengkap">Pilih Psikolog</label>
+                <label for="nama-lengkap">Pilih Konselor</label>
               </div>
               <div class="main-konselor__child">
                 <button class="arrow-konselor" type="button" id="scroll-up">
@@ -134,14 +134,21 @@
                 </button>
               </div>
             </div>
+              <div class="input-form">
+              <div class="label-form">
+                <label for="tanggal-konsul">Tanggal Konsultasi</label>
+              </div>
+              <input type="date" name="tanggal-konsul" id="">
+            </div>
             <div class="input-form">
               <div class="label-form">
                 <label for="layanan-konsul">Jenis Layanan Konsultasi</label>
               </div>
               <select name="layanan-konsul" id="">
                 <option value="">Pilih Layanan</option>
-                <option value="layanan1">layanan1</option>
-                <option value="layanan2">layanan2</option>
+                <option value="gaya-belajar">Gaya Belajar</option>
+                <option value="kepribadian">Kepribadian</option>
+                <option value="lainnya">Lainnya</option>
               </select>
             </div>
             <div class="input-form">
@@ -150,18 +157,9 @@
               </div>
               <select name="jam-konsul" id="">
                 <option value="">Pilih Jam Konsultasi</option>
-                <option value="jam1">jam1</option>
-                <option value="jam2">jam2</option>
-              </select>
-            </div>
-            <div class="input-form">
-              <div class="label-form">
-                <label for="via">Media Konsultasi</label>
-              </div>
-              <select name="via" id="">
-                <option value="">Pilih Media Konsultasi</option>
-                <option value="wa">Chat</option>
-                <option value="zoom">Video Chat / Telepon</option>
+                <option value="9-12">09.00-12.00</option>
+                <option value="13-15">13.00-15.00</option>
+                <option value="18-20">18.00-20.00</option>
               </select>
             </div>
           </div>

@@ -44,13 +44,13 @@
     <div class="image-parent">
 				<img src="../img/logo.png" width="120" height="auto" id="img-form">
 		</div>
-      <label class="login" for="user">Nama Pengguna</label>
+      <label class="login" for="user">E-mail</label>
       <input name="user" id="user" type="text" size="12" >
       <label class="login" for="pass">Kata Sandi</label>
       <input name="pass" id="pass" type="password" ><br><br>
 		<br><br>
     <div class="button">
-      <button onclick="window.location.href='pendaftaran.html'">Daftar</button>
+      <button onclick="daftarForm()">Daftar</button>
       <button id="btn-submit">Masuk</button>
     </div>
 	</form>
@@ -110,6 +110,10 @@
 					let container = document.getElementById('container')
 					container.innerHTML = '';
 				}
+
+        function daftarForm(){
+          window.location.href='pendaftaran.html'
+        }
 			</script>
 		<script src="../css/navfoot.js"></script>
 	
