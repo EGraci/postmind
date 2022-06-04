@@ -16,6 +16,9 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <style>
+      
+    </style>
   </head>
 
   <body>
@@ -40,13 +43,16 @@
         </div>
       </nav>
     </header>
-
+    <!-- alert daftar berhasil -->
+    <div id="toast">
+      Pendaftaran Berhasil, silahkan cek email secara berkala untuk konfirmasi Konsultasi
+    </div>
     <!-- main content -->
     <div class="main-konselor__body">
       <!-- form registrasi -->
       <div class="main-konselor__regist">
         <h1>Konsultasi dengan Konselor</h1>
-        <form action="" method="post">
+        <form action="./daftar-konsultasi.html" method="post">
           <div class="konselor-form">
             <div class="input-form" style="width: 100%;">
               <div class="label-form">
@@ -163,10 +169,11 @@
               </select>
             </div>
           </div>
-          <div class="button-regist">
-            <input type="submit" value="DAFTAR" />
-          </div>
         </form>
+        <!-- buttonnya ku keluarkan dari form supaya muncul alertnya -->
+        <div class="button-regist">
+          <input type="submit" id="submit" value="DAFTAR" />
+        </div>
       </div>
     </div>
 
@@ -212,6 +219,14 @@
     <script src="../css/navfoot.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+      $('#submit').click(function(){
+        var x = document.getElementById('toast')
+        x.className = 'show'
+        setTimeout(function(){
+          x.className = x.className.replace('show','')
+        },5000)
+      })
+
       $('#scroll-up').click(function () {
         event.preventDefault()
         $('#konselor').animate(
