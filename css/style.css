@@ -871,3 +871,11 @@ label {
     opacity: 0;
   }
 }
+
+/* ------------------toast__body */
+.toast__body {
+  background-color: #d3edff;
+  padding: 50px;
+  border-radius: 20px;
+  margin: 110px 0px;
+}
